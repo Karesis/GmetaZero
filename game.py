@@ -14,7 +14,7 @@ class GomokuGame:
 
     def clone(self):
         new_game = GomokuGame(self.board_size)
-        new_game.board = self.board.clone
+        new_game.board = self.board.clone()
         new_game.current_player = self.current_player
         new_game.last_move = self.last_move
         return new_game

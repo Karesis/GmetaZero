@@ -3,7 +3,8 @@ import torch
 import torch.optim as optim
 import numpy as np
 from nn import AlphaGomokuNet  # 请确保你的神经网络代码保存在 network.py 中
-from mcts import GomokuGame, MCTS, state_to_tensor
+from mcts import MCTS, state_to_tensor
+from game import GomokuGame
 
 def self_play_episode(net, num_simulations, device):
     """
