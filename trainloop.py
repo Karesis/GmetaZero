@@ -5,6 +5,7 @@ import numpy as np
 from nn import AlphaGomokuNet  # 请确保你的神经网络代码保存在 network.py 中
 from mcts import MCTS, state_to_tensor
 from game import GomokuGame
+import time
 
 def self_play_episode(net, num_simulations, device):
     """
@@ -47,13 +48,21 @@ def train(num_episodes=1000, num_simulations=50, batch_size=32, lr=0.001, device
 
     training_data = []
     for episode in range(num_episodes):
+        episode_start_time = time.time()
         print(f"Episode {episode+1}/{num_episodes}")
         examples = self_play_episode(net, num_simulations, device)
         training_data.extend(examples)
-
+        # 输出自对弈的统计信息
+        num_moves = len(examples)
+        print(f"  Collected {num_moves} moves in self-play.")
         if len(training_data) >= batch_size:
             net.train()
             np.random.shuffle(training_data)
+            batch_losses = []
+            # 记录策略和价值损失，方便分别观察
+            batch_losses_policy = []
+            batch_losses_value = []
+
             for i in range(0, len(training_data), batch_size):
                 batch = training_data[i:i+batch_size]
                 # 拼接状态张量，尺寸：(batch_size, channels, board_size, board_size)
@@ -68,7 +77,7 @@ def train(num_episodes=1000, num_simulations=50, batch_size=32, lr=0.001, device
                         index = i_move * board_size + j_move
                         target[index] = prob
                     target_pi.append(target)
-                target_pi = torch.tensor(target_pi, device=device)
+                target_pi = torch.tensor(np.array(target_pi), device=device)
                 target_value = torch.tensor([x[2] for x in batch], dtype=torch.float32, device=device).unsqueeze(1)
 
                 optimizer.zero_grad()
@@ -77,9 +86,32 @@ def train(num_episodes=1000, num_simulations=50, batch_size=32, lr=0.001, device
                 loss_value = loss_fn_value(out_value, target_value)
                 loss = loss_policy + loss_value
                 loss.backward()
+
+                # 记录梯度范数
+                total_norm = 0
+                for p in net.parameters():
+                    if p.grad is not None:
+                        param_norm = p.grad.data.norm(2)
+                        total_norm += param_norm.item() ** 2
+                total_norm = total_norm ** 0.5
+                print(f"  Batch gradient norm: {total_norm:.4f}")
+                
                 optimizer.step()
+
+                batch_losses.append(loss.item())
+                batch_losses_policy.append(loss_policy.item())
+                batch_losses_value.append(loss_value.item())
+            # 输出每个 batch 的平均损失
+            avg_loss = sum(batch_losses) / len(batch_losses)
+            avg_loss_policy = sum(batch_losses_policy) / len(batch_losses_policy)
+            avg_loss_value = sum(batch_losses_value) / len(batch_losses_value)
+            print(f"  Batch avg total Loss: {avg_loss:.4f} | Policy Loss: {avg_loss_policy:.4f} | Value Loss: {avg_loss_value:.4f}")
+            
             print(f"Loss: {loss.item():.4f}")
             training_data = []  # 每轮训练后清空数据
+        # 记录并输出每个episode的耗时
+        episode_elapsed = time.time() - episode_start_time
+        print(f"Episode {episode+1} finished in {episode_elapsed:.2f} seconds.\n")
     # 保存训练好的模型参数
     torch.save(net.state_dict(), "alphagomoku_net.pth")
     print("模型保存到 alphagomoku_net.pth")

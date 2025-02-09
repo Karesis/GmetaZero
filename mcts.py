@@ -33,9 +33,9 @@ def state_to_tensor(game):
     board_size = game.board_size
     channels = 8 * 2 + 3  # 若 history=8，则总共 19 个通道
     tensor = torch.zeros((channels, board_size, board_size), dtype=torch.float32)
-    tensor[-3] = (game.board == game.current_player).astype(torch.float32)
-    tensor[-2] = (game.board == -game.current_player).astype(torch.float32)
-    tensor[-1] = (game.board == 0).astype(torch.float32)
+    tensor[-3] = (game.board == game.current_player).float()
+    tensor[-2] = (game.board == -game.current_player).float()
+    tensor[-1] = (game.board == 0).float()
     return tensor.unsqueeze(0)  # 添加 batch 维度
 
 class MCTS:
@@ -96,7 +96,7 @@ class MCTS:
         self.net.eval()
         with torch.no_grad():
             log_policy, value = self.net(state_tensor)
-        policy = torch.exp(log_policy).cpu().numpy().flatten()  # 长度 = board_size^2+1
+        policy = torch.exp(log_policy).squeeze().cpu()  # 长度 = board_size^2+1
         legal_moves = node.game_state.get_legal_moves()
         board_size = node.game_state.board_size
         mask = torch.zeros_like(policy)

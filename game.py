@@ -56,18 +56,27 @@ class GomokuGame:
             for j in range(self.board_size):
                 if self.board[i, j] != 0:  # 检查当前位置是否有棋子
                     player = self.board[i, j]
+                    
                     # 横向检查
-                    if j <= self.board_size - 5 and torch.all(self.board[i, j:j+5] == player):
-                        return player
+                    if j <= self.board_size - 5:
+                        if torch.all(self.board[i, j:j+5] == player):
+                            return player
+                    
                     # 纵向检查
-                    if i <= self.board_size - 5 and torch.all(self.board[i:i+5, j] == player):
-                        return player
+                    if i <= self.board_size - 5:
+                        if torch.all(self.board[i:i+5, j] == player):
+                            return player
+                    
                     # 对角线（向右下）检查
                     if i <= self.board_size - 5 and j <= self.board_size - 5:
                         if torch.all(self.board[i:i+5, j:j+5].diagonal() == player):
                             return player
+                    
                     # 对角线（向右上）检查
+                    # 我们先取出从 (i-4, j) 到 (i, j+4) 的子矩阵，再翻转行顺序，使得对角线元素依次为 (i, j), (i-1, j+1), …, (i-4, j+4)
                     if i >= 4 and j <= self.board_size - 5:
-                        if torch.all(self.board[i:i-5:-1, j:j+5].diagonal() == player):
+                        sub_board = self.board[i-4:i+1, j:j+5]
+                        if torch.all(sub_board.flip(0).diagonal() == player):
                             return player
+
         return None

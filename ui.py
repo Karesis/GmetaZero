@@ -1,7 +1,8 @@
 # ui.py
 import torch
-from mcts import GomokuGame, MCTS, state_to_tensor
+from mcts import MCTS
 from nn import AlphaGomokuNet
+from game import GomokuGame
 
 def print_board(game):
     board = game.board
