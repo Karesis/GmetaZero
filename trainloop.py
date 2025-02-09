@@ -14,6 +14,8 @@ def self_play_episode(net, num_simulations, device):
     """
     game = GomokuGame(board_size=15)
     examples = []
+    mcts_begin = time.time()
+    print("mcts search begins")
     while not game.is_terminal():
         mcts = MCTS(net, num_simulations=num_simulations, device=device)
         move_probs = mcts.search(game)
@@ -25,6 +27,8 @@ def self_play_episode(net, num_simulations, device):
         chosen_index = np.random.choice(len(moves), p=probs)
         chosen_move = moves[chosen_index]
         game.make_move(chosen_move)
+    mcts_long = time.time() - mcts_begin
+    print(f"mcts part costs {mcts_long}s in total")
     winner = game.get_winner()
     training_examples = []
     for state, pi, player in examples:

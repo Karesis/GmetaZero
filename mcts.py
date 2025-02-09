@@ -1,6 +1,7 @@
 # mcts.py
 import math
 import torch
+import time
 class MCTSNode:
     """
     MCTS 树中的节点，保存了当前游戏状态、父节点、落子信息及搜索统计量：
@@ -55,6 +56,8 @@ class MCTS:
 
     def search(self, game_state):
         self.root = MCTSNode(game_state.clone())
+        print("MCTS SEARCH START")
+        begin = time.time()
         for _ in range(self.num_simulations):
             node = self.root
             # —— 选择阶段 ——
@@ -85,6 +88,8 @@ class MCTS:
         move_visits = {move: child.N for move, child in self.root.children.items()}
         total = sum(move_visits.values())
         move_probs = {move: visits / total for move, visits in move_visits.items()}
+        long = time.time() - begin
+        print(f"mcts costs {long} s")
         return move_probs
 
     def expand_and_evaluate(self, node):
