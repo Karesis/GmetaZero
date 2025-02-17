@@ -98,4 +98,4 @@ Karesis
 ## Acknowledgments
 
 - Thanks to AlphaZero for inspiration in the neural network architecture
-- Thanks to [Any other acknowledgments you want to add]
+- Thanks to my father(he just give me everything I need)
