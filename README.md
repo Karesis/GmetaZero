@@ -85,7 +85,7 @@ This project is under active development. Current focus areas:
 
 ## License
 
-[Insert your chosen license here]
+MIT License
 
 ## Contributing
 
