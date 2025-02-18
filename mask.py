@@ -1,5 +1,7 @@
 import torch
-from typing import List, Tuple, Optional
+from torch import nn
+import numpy as np
+from typing import List, Tuple, Optional, Dict
 from collections import deque
 import random
 import uuid
@@ -459,20 +461,307 @@ class Mask:
             'path': path
         })
         
-    def learn(self, batch_size: int = 32) -> Optional[float]:
-        """从经验中学习"""
-        if len(self.experiences) < batch_size:
-            return None
+    def learn(self, batch_size: int = 32, learning_iterations: int = 3) -> Dict[str, float]:
+        """从经验中学习，使用先进的学习策略
+        
+        Args:
+            batch_size: 单次学习的样本数量
+            learning_iterations: 学习迭代次数，增加可加深学习
             
-        indices = torch.randperm(len(self.experiences))[:batch_size]
-        batch = [self.experiences[i] for i in indices]
+        Returns:
+            Dict[str, float]: 学习统计信息，包括各类损失值和学习指标
+        """
+        if len(self.experiences) < batch_size:
+            return {'status': 'insufficient_data', 'loss': 0.0}
         
-        states = torch.cat([exp['state'] for exp in batch])
-        moves = torch.tensor([exp['move'] for exp in batch], device=self.device)
-        rewards = torch.tensor([exp['reward'] for exp in batch], device=self.device).float()
-        paths = [exp['path'] for exp in batch]
+        stats = {
+            'total_loss': 0.0,
+            'policy_loss': 0.0,
+            'value_loss': 0.0,
+            'entropy': 0.0,
+            'consistency_loss': 0.0,
+            'iterations': 0
+        }
         
-        return self.brain.learn(states, moves, rewards, paths)
+        # 计算经验重要性 - 基于稀有度和时间性
+        experience_weights = self._calculate_experience_weights()
+        
+        for iteration in range(learning_iterations):
+            # 优先经验采样（有偏采样）
+            if random.random() < 0.7:  # 70%概率使用加权采样
+                indices = self._weighted_sample(experience_weights, batch_size)
+            else:  # 30%概率完全随机采样以增加多样性
+                indices = torch.randperm(len(self.experiences))[:batch_size]
+                
+            batch = [self.experiences[i] for i in indices]
+            
+            # 准备数据
+            states = torch.cat([exp['state'] for exp in batch])
+            moves = torch.tensor([exp['move'] for exp in batch], device=self.device)
+            rewards = torch.tensor([exp['reward'] for exp in batch], device=self.device).float()
+            paths = [exp['path'] for exp in batch]
+            
+            # 是否包含旧预测值（如果有）
+            has_old_predictions = all('old_policy' in exp for exp in batch)
+            if has_old_predictions:
+                old_policies = torch.cat([exp['old_policy'] for exp in batch])
+                old_values = torch.cat([exp['old_value'] for exp in batch])
+            
+            # 获取当前预测
+            policies, values = self.brain.forward(states, paths)
+            
+            # 保存当前预测用于后续PPO风格更新
+            for i, idx in enumerate(indices):
+                if idx < len(self.experiences):  # 防止索引错误
+                    self.experiences[idx]['old_policy'] = policies[i:i+1].detach()
+                    self.experiences[idx]['old_value'] = values[i:i+1].detach()
+            
+            # 计算策略损失（带熵正则化）
+            policy_loss = nn.CrossEntropyLoss(reduction='none')(policies, moves)
+            policy_probs = torch.softmax(policies, dim=1)
+            entropy = -torch.sum(policy_probs * torch.log(policy_probs + 1e-10), dim=1)
+            
+            # 价值损失（Huber损失更稳定）
+            value_loss = nn.SmoothL1Loss(reduction='none')(values.squeeze(), rewards)
+            
+            # PPO风格的策略约束（如果有旧预测）
+            if has_old_predictions:
+                old_policy_probs = torch.softmax(old_policies, dim=1)
+                # 提取每个动作的概率
+                move_indices = moves.unsqueeze(1)
+                new_probs = torch.gather(policy_probs, 1, move_indices).squeeze()
+                old_probs = torch.gather(old_policy_probs, 1, move_indices).squeeze()
+                
+                # 计算比率并裁剪
+                ratios = new_probs / (old_probs + 1e-10)
+                clipped_ratios = torch.clamp(ratios, 0.8, 1.2)
+                ppo_loss = -torch.min(
+                    ratios * (rewards - old_values.squeeze()),
+                    clipped_ratios * (rewards - old_values.squeeze())
+                )
+                
+                # 自我模仿学习损失（对高回报动作的模仿）
+                high_value_mask = rewards > rewards.mean()
+                imitation_loss = torch.zeros_like(policy_loss)
+                if high_value_mask.sum() > 0:
+                    kl_div = nn.KLDivLoss(reduction='none')(
+                        torch.log_softmax(policies[high_value_mask], dim=1),
+                        policy_probs[high_value_mask]
+                    ).sum(dim=1)
+                    imitation_loss[high_value_mask] = kl_div
+                    
+                combined_policy_loss = policy_loss + 0.5 * ppo_loss + 0.3 * imitation_loss
+            else:
+                combined_policy_loss = policy_loss
+            
+            # 经验权重加权的总损失
+            batch_weights = torch.tensor([experience_weights[i] for i in indices], 
+                                        device=self.device).float()
+            weighted_policy_loss = (combined_policy_loss * batch_weights).mean()
+            weighted_value_loss = (value_loss * batch_weights).mean()
+            
+            # 添加正则化损失
+            l2_reg = 0.0
+            for param in self.brain.parameters():
+                l2_reg += 0.0001 * torch.sum(param ** 2)
+                
+            # 总损失
+            entropy_bonus = 0.01 * entropy.mean()  # 鼓励探索
+            consistency_loss = 0.0
+            
+            # 如果批次中有相似状态，鼓励一致性
+            if states.size(0) > 1:
+                similarity_matrix = self._compute_state_similarity(states)
+                similar_pairs = (similarity_matrix > 0.85).float() - torch.eye(states.size(0), device=self.device)
+                if similar_pairs.sum() > 0:
+                    policy_diffs = torch.cdist(policy_probs, policy_probs, p=1)
+                    consistency_loss = (similar_pairs * policy_diffs).sum() / (similar_pairs.sum() + 1e-6)
+            
+            total_loss = (
+                weighted_policy_loss + 
+                0.5 * weighted_value_loss - 
+                entropy_bonus + 
+                l2_reg +
+                0.2 * consistency_loss
+            )
+            
+            # 优化器更新
+            self.brain.optimizer.zero_grad()
+            total_loss.backward()
+            
+            # 梯度裁剪，防止梯度爆炸
+            torch.nn.utils.clip_grad_norm_(self.brain.parameters(), max_norm=1.0)
+            self.brain.optimizer.step()
+            
+            # 更新统计
+            stats['total_loss'] += total_loss.item()
+            stats['policy_loss'] += weighted_policy_loss.item()
+            stats['value_loss'] += weighted_value_loss.item()
+            stats['entropy'] += entropy.mean().item()
+            stats['consistency_loss'] += consistency_loss.item() if isinstance(consistency_loss, torch.Tensor) else consistency_loss
+            stats['iterations'] += 1
+            
+            # 早停 - 如果损失过低则提前结束
+            if total_loss.item() < 0.01:
+                break
+                
+        # 计算平均损失
+        for key in ['total_loss', 'policy_loss', 'value_loss', 'entropy', 'consistency_loss']:
+            if stats['iterations'] > 0:
+                stats[key] /= stats['iterations']
+        
+        # 定期回顾性经验压缩（长期记忆管理）
+        if random.random() < 0.05:  # 5%概率执行
+            self._consolidate_experiences()
+            
+        return stats
+
+    def _weighted_sample(self, weights: List[float], sample_size: int) -> List[int]:
+        """加权采样，确保重要经验更频繁地被学习
+        
+        Args:
+            weights: 每个经验的权重列表
+            sample_size: 要采样的经验数量
+            
+        Returns:
+            List[int]: 采样得到的索引列表
+        """
+        weights_tensor = torch.tensor(weights, device=self.device)
+        weights_tensor = torch.clamp(weights_tensor, min=0.01)  # 确保每个样本有最小概率被选中
+        
+        # 温度采样 - 使概率分布更平滑或更尖锐
+        temperature = max(0.5, 1.0 - 0.05 * self.age)  # 随年龄增长降低温度
+        weights_tensor = weights_tensor ** (1.0 / temperature)
+        
+        # 正则化为概率
+        probs = weights_tensor / weights_tensor.sum()
+        
+        # 多项分布采样
+        indices = torch.multinomial(probs, 
+                                sample_size, 
+                                replacement=len(weights) < sample_size)
+                                
+        return indices.tolist()
+
+    def _calculate_experience_weights(self) -> List[float]:
+        """计算每个经验样本的重要性权重
+        
+        考虑因素:
+        1. 回报值 - 高回报经验更有价值
+        2. 稀有度 - 不常见的状态更有价值
+        3. 时间衰减 - 新的经验相对更重要
+        4. TD误差 - 预测误差大的样本更需要学习
+        
+        Returns:
+            List[float]: 权重列表
+        """
+        if not self.experiences:
+            return []
+            
+        num_exp = len(self.experiences)
+        weights = np.ones(num_exp)
+        
+        # 1. 回报值重要性
+        rewards = np.array([exp['reward'] for exp in self.experiences])
+        reward_weights = (rewards - rewards.min()) / (rewards.max() - rewards.min() + 1e-6)
+        weights *= (1.0 + reward_weights)
+        
+        # 2. 稀有度评分（基于状态哈希的计数）
+        state_hashes = {}
+        for exp in self.experiences:
+            # 简化的状态哈希
+            state_flat = exp['state'].cpu().numpy().flatten()
+            state_hash = hash(state_flat.tobytes()[:100])  # 取前100个字节防止计算量过大
+            state_hashes[state_hash] = state_hashes.get(state_hash, 0) + 1
+        
+        rarity_weights = np.array([1.0 / state_hashes.get(hash(exp['state'].cpu().numpy().flatten().tobytes()[:100]), 1) 
+                                for exp in self.experiences])
+        rarity_weights = rarity_weights / (rarity_weights.max() + 1e-6)
+        weights *= (1.0 + 0.5 * rarity_weights)  # 稀有样本获得50%额外权重
+        
+        # 3. 时间衰减 - 指数衰减，最近的经验更重要
+        recency_factor = 0.97  # 每个位置衰减3%
+        position_weights = np.array([recency_factor ** (num_exp - i - 1) for i in range(num_exp)])
+        weights *= position_weights
+        
+        # 4. TD误差（如果有预测值）
+        if all('old_value' in exp for exp in self.experiences):
+            td_errors = np.array([
+                abs(exp['reward'] - exp['old_value'].item())
+                if 'old_value' in exp else 1.0
+                for exp in self.experiences
+            ])
+            if td_errors.max() > td_errors.min():
+                td_weights = (td_errors - td_errors.min()) / (td_errors.max() - td_errors.min())
+                weights *= (1.0 + 0.7 * td_weights)  # TD误差大的获得70%额外权重
+        
+        # 归一化
+        if weights.sum() > 0:
+            weights = weights / weights.sum()
+            
+        return weights.tolist()
+
+    def _compute_state_similarity(self, states: torch.Tensor) -> torch.Tensor:
+        """计算批次内状态之间的相似度
+        
+        Args:
+            states: 状态张量 [batch_size, channels, height, width]
+            
+        Returns:
+            torch.Tensor: 相似度矩阵 [batch_size, batch_size]
+        """
+        # 将状态展平为向量
+        flat_states = states.view(states.size(0), -1)
+        
+        # 计算余弦相似度
+        norm_states = flat_states / (torch.norm(flat_states, dim=1, keepdim=True) + 1e-8)
+        similarity = torch.mm(norm_states, norm_states.transpose(0, 1))
+        
+        return similarity
+
+    def _consolidate_experiences(self):
+        """整合和压缩经验记忆
+        
+        策略:
+        1. 删除低价值的冗余经验
+        2. 保留代表性经验样本
+        3. 确保记忆的多样性
+        """
+        if len(self.experiences) < 1000:
+            return  # 仅在经验足够多时执行
+            
+        # 计算经验重要性
+        weights = self._calculate_experience_weights()
+        
+        # 识别低价值经验（保留80%的经验）
+        threshold = sorted(weights)[int(len(weights) * 0.2)]
+        
+        # 聚类保留代表性样本
+        # 简化版：优先保留高权重和最近的经验
+        new_experiences = []
+        
+        # 1. 首先保留高价值经验（权重>阈值）
+        for i, (exp, w) in enumerate(zip(self.experiences, weights)):
+            if w > threshold:
+                new_experiences.append(exp)
+                
+        # 2. 从剩余经验中抽样保留一定数量的经验
+        remaining = [exp for i, exp in enumerate(self.experiences) 
+                    if weights[i] <= threshold]
+        
+        # 保留最近的30%经验
+        recent_count = int(len(self.experiences) * 0.3)
+        new_experiences.extend(self.experiences[-recent_count:])
+        
+        # 随机保留一些剩余经验，提高多样性
+        remaining_needed = self.experiences.maxlen - len(new_experiences)
+        if remaining_needed > 0 and remaining:
+            random_sample = random.sample(remaining, 
+                                        min(remaining_needed, len(remaining)))
+            new_experiences.extend(random_sample)
+        
+        # 更新经验池
+        self.experiences = deque(new_experiences, maxlen=self.experiences.maxlen)
         
     def save(self, path: str):
         """保存模型和状态"""
