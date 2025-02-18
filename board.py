@@ -11,11 +11,11 @@ class Board:
         self.last_move = None  # 记录最后一次落子位置：(row, col, player)
 
     def __str__(self):
-        """简化的棋盘显示"""
+        """简化的棋盘显示，使坐标与内部表示一致"""
         result = []
         result.append("  " + " ".join(str(i+1) for i in range(self.size)))
         for i in range(self.size):
-            row_str = f"{i+1} " + " ".join(self.board[self.size-1-i])
+            row_str = f"{i+1} " + " ".join(self.board[i])
             result.append(row_str)
         
         # 添加最后落子信息

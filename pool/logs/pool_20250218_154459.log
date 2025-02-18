@@ -1,0 +1,1362 @@
+2025-02-18 15:44:59,336 [INFO] Initializing population with 20 members
+2025-02-18 15:44:59,809 [INFO] Starting cycle 1
+2025-02-18 15:44:59,809 [INFO] Digestion phase started
+2025-02-18 15:45:01,196 [INFO] Battle phase started
+2025-02-18 15:45:03,048 [INFO] Reproduction phase started
+2025-02-18 15:45:03,052 [INFO] New member born: 79251e6f (Parent: 50b36cd2)
+2025-02-18 15:45:03,057 [INFO] New member born: 8884a0eb (Parent: 827a7b75)
+2025-02-18 15:45:03,063 [INFO] New member born: 21594205 (Parent: 2181f2b2)
+2025-02-18 15:45:03,070 [INFO] New member born: 027f7c29 (Parent: 45a6148f)
+2025-02-18 15:45:03,076 [INFO] New member born: e08fe5ff (Parent: 7968b8a2)
+2025-02-18 15:45:03,082 [INFO] New member born: 951caf88 (Parent: 9caa50f3)
+2025-02-18 15:45:03,086 [INFO] New member born: afd1d920 (Parent: 4bec6432)
+2025-02-18 15:45:03,092 [INFO] New member born: f510e481 (Parent: 646ac90a)
+2025-02-18 15:45:03,101 [INFO] New member born: 526bea58 (Parent: b1840f3e)
+2025-02-18 15:45:03,108 [INFO] New member born: 47e02338 (Parent: d1d9e66e)
+2025-02-18 15:45:03,108 [INFO] Cycle 1 stats: Population=30, Avg Health=79.6, Avg Age=1.0, Best Performance=0.50
+2025-02-18 15:45:03,108 [INFO] Starting cycle 2
+2025-02-18 15:45:03,108 [INFO] Digestion phase started
+2025-02-18 15:45:04,993 [INFO] Battle phase started
+2025-02-18 15:45:08,933 [INFO] Cycle 2 stats: Population=30, Avg Health=67.0, Avg Age=2.0, Best Performance=0.75
+2025-02-18 15:45:08,933 [INFO] Starting cycle 3
+2025-02-18 15:45:08,933 [INFO] Digestion phase started
+2025-02-18 15:45:10,974 [INFO] Battle phase started
+2025-02-18 15:45:12,718 [INFO] Member died: 2181f2b2 (Age: 2, Performance: 0.14)
+2025-02-18 15:45:13,531 [INFO] Member died: e537b4e1 (Age: 2, Performance: 0.00)
+2025-02-18 15:45:14,125 [INFO] Reproduction phase started
+2025-02-18 15:45:14,129 [INFO] New member born: 29d76a11 (Parent: f510e481)
+2025-02-18 15:45:14,135 [INFO] New member born: 8f7c8051 (Parent: 027f7c29)
+2025-02-18 15:45:14,135 [INFO] Cycle 3 stats: Population=30, Avg Health=62.1, Avg Age=2.9, Best Performance=0.71
+2025-02-18 15:45:14,135 [INFO] Starting cycle 4
+2025-02-18 15:45:14,135 [INFO] Digestion phase started
+2025-02-18 15:45:15,021 [INFO] Member died: 1347ae9d (Age: 3, Performance: 0.18)
+2025-02-18 15:45:15,281 [INFO] Member died: 6730c10a (Age: 3, Performance: 0.11)
+2025-02-18 15:45:16,048 [INFO] Battle phase started
+2025-02-18 15:45:16,455 [INFO] Member died: b1840f3e (Age: 3, Performance: 0.20)
+2025-02-18 15:45:16,883 [INFO] Member died: 50b36cd2 (Age: 3, Performance: 0.12)
+2025-02-18 15:45:18,320 [INFO] Reproduction phase started
+2025-02-18 15:45:18,325 [INFO] New member born: 2fbbe931 (Parent: f510e481)
+2025-02-18 15:45:18,329 [INFO] New member born: 18d9b3b1 (Parent: 29d76a11)
+2025-02-18 15:45:18,336 [INFO] New member born: 4eac1c2e (Parent: 027f7c29)
+2025-02-18 15:45:18,343 [INFO] New member born: 5cc61345 (Parent: 8884a0eb)
+2025-02-18 15:45:18,343 [INFO] Cycle 4 stats: Population=30, Avg Health=62.9, Avg Age=3.5, Best Performance=0.67
+2025-02-18 15:45:18,343 [INFO] Starting cycle 5
+2025-02-18 15:45:18,343 [INFO] Digestion phase started
+2025-02-18 15:45:19,398 [INFO] Member died: 79251e6f (Age: 4, Performance: 0.11)
+2025-02-18 15:45:20,352 [INFO] Battle phase started
+2025-02-18 15:45:20,653 [INFO] Member died: 3e4c6e70 (Age: 4, Performance: 0.09)
+2025-02-18 15:45:20,802 [INFO] Member died: 30627b3a (Age: 4, Performance: 0.09)
+2025-02-18 15:45:20,938 [INFO] Member died: 7968b8a2 (Age: 4, Performance: 0.20)
+2025-02-18 15:45:21,396 [INFO] Member died: 526bea58 (Age: 4, Performance: 0.10)
+2025-02-18 15:45:22,435 [INFO] Member died: 21594205 (Age: 4, Performance: 0.10)
+2025-02-18 15:45:22,617 [INFO] Reproduction phase started
+2025-02-18 15:45:22,622 [INFO] New member born: d778ca6d (Parent: 18d9b3b1)
+2025-02-18 15:45:22,627 [INFO] New member born: ae7f81c3 (Parent: 5cc61345)
+2025-02-18 15:45:22,634 [INFO] New member born: 6b411963 (Parent: f510e481)
+2025-02-18 15:45:22,640 [INFO] New member born: fcad764a (Parent: 027f7c29)
+2025-02-18 15:45:22,647 [INFO] New member born: c2646f08 (Parent: 29d76a11)
+2025-02-18 15:45:22,652 [INFO] New member born: 2b5c3884 (Parent: 2fbbe931)
+2025-02-18 15:45:22,652 [INFO] Cycle 5 stats: Population=30, Avg Health=66.5, Avg Age=3.7, Best Performance=0.67
+2025-02-18 15:45:22,652 [INFO] Starting cycle 6
+2025-02-18 15:45:22,652 [INFO] Digestion phase started
+2025-02-18 15:45:24,315 [INFO] Battle phase started
+2025-02-18 15:45:25,017 [INFO] Member died: 45a6148f (Age: 5, Performance: 0.27)
+2025-02-18 15:45:25,479 [INFO] Member died: 4bec6432 (Age: 5, Performance: 0.23)
+2025-02-18 15:45:25,812 [INFO] Member died: 5669f8fb (Age: 5, Performance: 0.20)
+2025-02-18 15:45:26,306 [INFO] Member died: d17181be (Age: 5, Performance: 0.20)
+2025-02-18 15:45:27,672 [INFO] Member died: 951caf88 (Age: 5, Performance: 0.17)
+2025-02-18 15:45:27,914 [INFO] Reproduction phase started
+2025-02-18 15:45:27,918 [INFO] New member born: b9593536 (Parent: fcad764a)
+2025-02-18 15:45:27,922 [INFO] New member born: 804c73c3 (Parent: c2646f08)
+2025-02-18 15:45:27,929 [INFO] New member born: a80f86de (Parent: 2b5c3884)
+2025-02-18 15:45:27,936 [INFO] New member born: 3eaa765a (Parent: 29d76a11)
+2025-02-18 15:45:27,942 [INFO] New member born: bab50239 (Parent: 2fbbe931)
+2025-02-18 15:45:27,942 [INFO] Cycle 6 stats: Population=30, Avg Health=65.2, Avg Age=3.8, Best Performance=0.67
+2025-02-18 15:45:27,942 [INFO] Starting cycle 7
+2025-02-18 15:45:27,942 [INFO] Digestion phase started
+2025-02-18 15:45:29,945 [INFO] Battle phase started
+2025-02-18 15:45:30,042 [INFO] Member died: 8884a0eb (Age: 6, Performance: 0.38)
+2025-02-18 15:45:32,938 [INFO] Reproduction phase started
+2025-02-18 15:45:32,942 [INFO] New member born: 024b4a5e (Parent: 3eaa765a)
+2025-02-18 15:45:32,942 [INFO] Cycle 7 stats: Population=30, Avg Health=55.9, Avg Age=4.6, Best Performance=0.75
+2025-02-18 15:45:32,942 [INFO] Starting cycle 8
+2025-02-18 15:45:32,942 [INFO] Digestion phase started
+2025-02-18 15:45:34,872 [INFO] Battle phase started
+2025-02-18 15:45:35,661 [INFO] Member died: 18d9b3b1 (Age: 4, Performance: 0.27)
+2025-02-18 15:45:35,908 [INFO] Member died: ae7f81c3 (Age: 3, Performance: 0.10)
+2025-02-18 15:45:36,551 [INFO] Member died: 2a756da4 (Age: 7, Performance: 0.21)
+2025-02-18 15:45:37,092 [INFO] Reproduction phase started
+2025-02-18 15:45:37,096 [INFO] New member born: 159bfa0c (Parent: 3eaa765a)
+2025-02-18 15:45:37,101 [INFO] New member born: 39d9eb7b (Parent: 027f7c29)
+2025-02-18 15:45:37,107 [INFO] New member born: 4a9d8aff (Parent: 2b5c3884)
+2025-02-18 15:45:37,108 [INFO] Cycle 8 stats: Population=30, Avg Health=55.1, Avg Age=5.2, Best Performance=0.67
+2025-02-18 15:45:37,108 [INFO] Starting cycle 9
+2025-02-18 15:45:37,108 [INFO] Digestion phase started
+2025-02-18 15:45:37,661 [INFO] Member died: afd1d920 (Age: 8, Performance: 0.25)
+2025-02-18 15:45:38,948 [INFO] Battle phase started
+2025-02-18 15:45:39,718 [INFO] Member died: 5cc61345 (Age: 5, Performance: 0.27)
+2025-02-18 15:45:40,238 [INFO] Member died: 9caa50f3 (Age: 8, Performance: 0.35)
+2025-02-18 15:45:40,603 [INFO] Member died: 827a7b75 (Age: 8, Performance: 0.29)
+2025-02-18 15:45:40,603 [INFO] Reproduction phase started
+2025-02-18 15:45:40,607 [INFO] New member born: a6caed5e (Parent: 3eaa765a)
+2025-02-18 15:45:40,612 [INFO] New member born: 706a1905 (Parent: 804c73c3)
+2025-02-18 15:45:40,619 [INFO] New member born: 600d27c2 (Parent: 2b5c3884)
+2025-02-18 15:45:40,625 [INFO] New member born: 2eb8118c (Parent: 2fbbe931)
+2025-02-18 15:45:40,626 [INFO] Cycle 9 stats: Population=30, Avg Health=54.0, Avg Age=5.2, Best Performance=0.62
+2025-02-18 15:45:40,627 [INFO] Starting cycle 10
+2025-02-18 15:45:40,627 [INFO] Digestion phase started
+2025-02-18 15:45:41,404 [INFO] Member died: 8f7c8051 (Age: 7, Performance: 0.25)
+2025-02-18 15:45:41,733 [INFO] Member died: fcad764a (Age: 5, Performance: 0.33)
+2025-02-18 15:45:42,732 [INFO] Battle phase started
+2025-02-18 15:45:42,825 [INFO] Member died: 47e02338 (Age: 9, Performance: 0.21)
+2025-02-18 15:45:43,132 [INFO] Member died: b9593536 (Age: 4, Performance: 0.00)
+2025-02-18 15:45:43,236 [INFO] Member died: d1d9e66e (Age: 9, Performance: 0.27)
+2025-02-18 15:45:43,772 [INFO] Member died: f2e39bf3 (Age: 9, Performance: 0.29)
+2025-02-18 15:45:44,121 [INFO] Member died: 027f7c29 (Age: 9, Performance: 0.48)
+2025-02-18 15:45:44,219 [INFO] Member died: 6b411963 (Age: 5, Performance: 0.09)
+2025-02-18 15:45:44,378 [INFO] Member died: f510e481 (Age: 9, Performance: 0.48)
+2025-02-18 15:45:44,816 [INFO] Member died: e08fe5ff (Age: 9, Performance: 0.30)
+2025-02-18 15:45:45,024 [INFO] Reproduction phase started
+2025-02-18 15:45:45,028 [INFO] New member born: abf53df0 (Parent: 024b4a5e)
+2025-02-18 15:45:45,033 [INFO] New member born: ee24bd2d (Parent: 29d76a11)
+2025-02-18 15:45:45,041 [INFO] New member born: 22f072a8 (Parent: 804c73c3)
+2025-02-18 15:45:45,048 [INFO] New member born: 17516d97 (Parent: 2fbbe931)
+2025-02-18 15:45:45,054 [INFO] New member born: 2e135632 (Parent: 4eac1c2e)
+2025-02-18 15:45:45,061 [INFO] New member born: 443b90d5 (Parent: d778ca6d)
+2025-02-18 15:45:45,066 [INFO] New member born: 581a864f (Parent: 4a9d8aff)
+2025-02-18 15:45:45,072 [INFO] New member born: 5e2f0d04 (Parent: a6caed5e)
+2025-02-18 15:45:45,072 [INFO] Cycle 10 stats: Population=28, Avg Health=66.5, Avg Age=3.9, Best Performance=0.60
+2025-02-18 15:45:45,167 [INFO] State saved to pool/cycle_10
+2025-02-18 15:45:45,167 [INFO] Starting cycle 11
+2025-02-18 15:45:45,167 [INFO] Digestion phase started
+2025-02-18 15:45:45,319 [INFO] Member died: 897d7200 (Age: 10, Performance: 0.29)
+2025-02-18 15:45:46,987 [INFO] Battle phase started
+2025-02-18 15:45:48,920 [INFO] Member died: bab50239 (Age: 5, Performance: 0.23)
+2025-02-18 15:45:49,387 [INFO] Member died: 646ac90a (Age: 10, Performance: 0.32)
+2025-02-18 15:45:49,826 [INFO] Member died: a6caed5e (Age: 2, Performance: 0.29)
+2025-02-18 15:45:50,005 [INFO] Member died: 2fbbe931 (Age: 7, Performance: 0.44)
+2025-02-18 15:45:50,005 [INFO] Reproduction phase started
+2025-02-18 15:45:50,009 [INFO] New member born: 781ea221 (Parent: 5e2f0d04)
+2025-02-18 15:45:50,014 [INFO] New member born: e87a1b35 (Parent: 22f072a8)
+2025-02-18 15:45:50,020 [INFO] New member born: 473cbc5c (Parent: 3eaa765a)
+2025-02-18 15:45:50,027 [INFO] New member born: 496d9bdb (Parent: 804c73c3)
+2025-02-18 15:45:50,033 [INFO] New member born: d48879cf (Parent: 024b4a5e)
+2025-02-18 15:45:50,039 [INFO] New member born: 34e96d76 (Parent: 29d76a11)
+2025-02-18 15:45:50,044 [INFO] New member born: 8ff33b09 (Parent: 159bfa0c)
+2025-02-18 15:45:50,044 [INFO] Cycle 11 stats: Population=30, Avg Health=66.4, Avg Age=3.5, Best Performance=0.75
+2025-02-18 15:45:50,045 [INFO] Starting cycle 12
+2025-02-18 15:45:50,045 [INFO] Digestion phase started
+2025-02-18 15:45:52,110 [INFO] Battle phase started
+2025-02-18 15:45:52,402 [INFO] Member died: 29d76a11 (Age: 9, Performance: 0.50)
+2025-02-18 15:45:52,762 [INFO] Member died: a80f86de (Age: 6, Performance: 0.20)
+2025-02-18 15:45:53,427 [INFO] Member died: 706a1905 (Age: 3, Performance: 0.00)
+2025-02-18 15:45:53,593 [INFO] Member died: 3eaa765a (Age: 6, Performance: 0.53)
+2025-02-18 15:45:54,697 [INFO] Member died: 804c73c3 (Age: 6, Performance: 0.47)
+2025-02-18 15:45:54,697 [INFO] Reproduction phase started
+2025-02-18 15:45:54,702 [INFO] New member born: 97528482 (Parent: 5e2f0d04)
+2025-02-18 15:45:54,707 [INFO] New member born: 3d14139a (Parent: 781ea221)
+2025-02-18 15:45:54,716 [INFO] New member born: c464df64 (Parent: 496d9bdb)
+2025-02-18 15:45:54,723 [INFO] New member born: 5eaeaf00 (Parent: 024b4a5e)
+2025-02-18 15:45:54,729 [INFO] New member born: fd053124 (Parent: 600d27c2)
+2025-02-18 15:45:54,729 [INFO] Cycle 12 stats: Population=30, Avg Health=67.3, Avg Age=3.5, Best Performance=0.67
+2025-02-18 15:45:54,730 [INFO] Starting cycle 13
+2025-02-18 15:45:54,730 [INFO] Digestion phase started
+2025-02-18 15:45:54,946 [INFO] Member died: c2646f08 (Age: 8, Performance: 0.31)
+2025-02-18 15:45:56,797 [INFO] Battle phase started
+2025-02-18 15:45:59,523 [INFO] Member died: 2eb8118c (Age: 4, Performance: 0.21)
+2025-02-18 15:46:00,567 [INFO] Reproduction phase started
+2025-02-18 15:46:00,572 [INFO] New member born: 1690cba7 (Parent: 5e2f0d04)
+2025-02-18 15:46:00,577 [INFO] New member born: 19a1e504 (Parent: 496d9bdb)
+2025-02-18 15:46:00,577 [INFO] Cycle 13 stats: Population=30, Avg Health=60.9, Avg Age=4.1, Best Performance=0.62
+2025-02-18 15:46:00,577 [INFO] Starting cycle 14
+2025-02-18 15:46:00,577 [INFO] Digestion phase started
+2025-02-18 15:46:02,640 [INFO] Battle phase started
+2025-02-18 15:46:03,737 [INFO] Member died: 8ff33b09 (Age: 3, Performance: 0.00)
+2025-02-18 15:46:05,041 [INFO] Reproduction phase started
+2025-02-18 15:46:05,046 [INFO] New member born: fb146d18 (Parent: 2b5c3884)
+2025-02-18 15:46:05,046 [INFO] Cycle 14 stats: Population=30, Avg Health=55.5, Avg Age=5.0, Best Performance=0.60
+2025-02-18 15:46:05,046 [INFO] Starting cycle 15
+2025-02-18 15:46:05,046 [INFO] Digestion phase started
+2025-02-18 15:46:07,186 [INFO] Battle phase started
+2025-02-18 15:46:07,310 [INFO] Member died: abf53df0 (Age: 5, Performance: 0.09)
+2025-02-18 15:46:07,655 [INFO] Member died: e87a1b35 (Age: 4, Performance: 0.10)
+2025-02-18 15:46:08,246 [INFO] Member died: 496d9bdb (Age: 4, Performance: 0.33)
+2025-02-18 15:46:10,419 [INFO] Reproduction phase started
+2025-02-18 15:46:10,424 [INFO] New member born: 0acd6295 (Parent: 1690cba7)
+2025-02-18 15:46:10,428 [INFO] New member born: 7fd86588 (Parent: 600d27c2)
+2025-02-18 15:46:10,436 [INFO] New member born: ed10eb97 (Parent: d778ca6d)
+2025-02-18 15:46:10,436 [INFO] Cycle 15 stats: Population=30, Avg Health=52.6, Avg Age=5.6, Best Performance=0.60
+2025-02-18 15:46:10,436 [INFO] Starting cycle 16
+2025-02-18 15:46:10,436 [INFO] Digestion phase started
+2025-02-18 15:46:11,842 [INFO] Member died: 3d14139a (Age: 4, Performance: 0.11)
+2025-02-18 15:46:12,693 [INFO] Battle phase started
+2025-02-18 15:46:13,401 [INFO] Member died: 781ea221 (Age: 5, Performance: 0.31)
+2025-02-18 15:46:13,698 [INFO] Member died: 024b4a5e (Age: 9, Performance: 0.43)
+2025-02-18 15:46:13,977 [INFO] Member died: 22f072a8 (Age: 6, Performance: 0.25)
+2025-02-18 15:46:15,135 [INFO] Member died: 34e96d76 (Age: 5, Performance: 0.23)
+2025-02-18 15:46:15,647 [INFO] Member died: 2b5c3884 (Age: 11, Performance: 0.46)
+2025-02-18 15:46:15,865 [INFO] Member died: 17516d97 (Age: 6, Performance: 0.29)
+2025-02-18 15:46:16,548 [INFO] Reproduction phase started
+2025-02-18 15:46:16,555 [INFO] New member born: bf64f094 (Parent: ed10eb97)
+2025-02-18 15:46:16,559 [INFO] New member born: c7aa3e79 (Parent: 5e2f0d04)
+2025-02-18 15:46:16,564 [INFO] New member born: 28c20e3d (Parent: 1690cba7)
+2025-02-18 15:46:16,571 [INFO] New member born: 8670e0ba (Parent: 600d27c2)
+2025-02-18 15:46:16,578 [INFO] New member born: 392702e9 (Parent: 97528482)
+2025-02-18 15:46:16,585 [INFO] New member born: cb567b07 (Parent: 581a864f)
+2025-02-18 15:46:16,585 [INFO] Cycle 16 stats: Population=29, Avg Health=58.2, Avg Age=5.2, Best Performance=0.67
+2025-02-18 15:46:16,585 [INFO] Starting cycle 17
+2025-02-18 15:46:16,585 [INFO] Digestion phase started
+2025-02-18 15:46:16,692 [INFO] Member died: 4eac1c2e (Age: 13, Performance: 0.40)
+2025-02-18 15:46:16,786 [INFO] Member died: d778ca6d (Age: 12, Performance: 0.42)
+2025-02-18 15:46:18,553 [INFO] Battle phase started
+2025-02-18 15:46:19,361 [INFO] Member died: 581a864f (Age: 7, Performance: 0.37)
+2025-02-18 15:46:19,811 [INFO] Member died: 5eaeaf00 (Age: 5, Performance: 0.09)
+2025-02-18 15:46:21,334 [INFO] Reproduction phase started
+2025-02-18 15:46:21,339 [INFO] New member born: e8ec8999 (Parent: 28c20e3d)
+2025-02-18 15:46:21,344 [INFO] New member born: 14d2c54b (Parent: 1690cba7)
+2025-02-18 15:46:21,350 [INFO] New member born: 6cd7fe65 (Parent: bf64f094)
+2025-02-18 15:46:21,359 [INFO] New member born: e7752982 (Parent: 2e135632)
+2025-02-18 15:46:21,364 [INFO] New member born: 05e429bd (Parent: 443b90d5)
+2025-02-18 15:46:21,364 [INFO] Cycle 17 stats: Population=30, Avg Health=58.8, Avg Age=4.8, Best Performance=0.67
+2025-02-18 15:46:21,365 [INFO] Starting cycle 18
+2025-02-18 15:46:21,365 [INFO] Digestion phase started
+2025-02-18 15:46:23,442 [INFO] Battle phase started
+2025-02-18 15:46:23,912 [INFO] Member died: 159bfa0c (Age: 10, Performance: 0.33)
+2025-02-18 15:46:24,833 [INFO] Member died: ee24bd2d (Age: 8, Performance: 0.25)
+2025-02-18 15:46:25,002 [INFO] Member died: 1690cba7 (Age: 5, Performance: 0.45)
+2025-02-18 15:46:25,496 [INFO] Member died: 5e2f0d04 (Age: 8, Performance: 0.47)
+2025-02-18 15:46:25,757 [INFO] Member died: 443b90d5 (Age: 8, Performance: 0.33)
+2025-02-18 15:46:26,053 [INFO] Member died: 97528482 (Age: 6, Performance: 0.29)
+2025-02-18 15:46:26,487 [INFO] Reproduction phase started
+2025-02-18 15:46:26,491 [INFO] New member born: 5376d2dd (Parent: e7752982)
+2025-02-18 15:46:26,496 [INFO] New member born: 852c0c63 (Parent: 28c20e3d)
+2025-02-18 15:46:26,502 [INFO] New member born: 14eb936e (Parent: 14d2c54b)
+2025-02-18 15:46:26,515 [INFO] New member born: b723567c (Parent: 05e429bd)
+2025-02-18 15:46:26,522 [INFO] New member born: 755e6671 (Parent: cb567b07)
+2025-02-18 15:46:26,527 [INFO] New member born: 0d5779d0 (Parent: 2e135632)
+2025-02-18 15:46:26,527 [INFO] Cycle 18 stats: Population=30, Avg Health=63.4, Avg Age=4.3, Best Performance=0.67
+2025-02-18 15:46:26,527 [INFO] Starting cycle 19
+2025-02-18 15:46:26,527 [INFO] Digestion phase started
+2025-02-18 15:46:28,561 [INFO] Battle phase started
+2025-02-18 15:46:28,909 [INFO] Member died: ed10eb97 (Age: 4, Performance: 0.22)
+2025-02-18 15:46:30,308 [INFO] Member died: fd053124 (Age: 7, Performance: 0.22)
+2025-02-18 15:46:30,687 [INFO] Member died: 39d9eb7b (Age: 11, Performance: 0.27)
+2025-02-18 15:46:31,024 [INFO] Reproduction phase started
+2025-02-18 15:46:31,028 [INFO] New member born: d522d3fc (Parent: c7aa3e79)
+2025-02-18 15:46:31,033 [INFO] New member born: 765bd461 (Parent: 14d2c54b)
+2025-02-18 15:46:31,039 [INFO] New member born: aaec2db6 (Parent: 05e429bd)
+2025-02-18 15:46:31,039 [INFO] Cycle 19 stats: Population=30, Avg Health=60.6, Avg Age=4.5, Best Performance=0.50
+2025-02-18 15:46:31,039 [INFO] Starting cycle 20
+2025-02-18 15:46:31,039 [INFO] Digestion phase started
+2025-02-18 15:46:31,595 [INFO] Member died: 19a1e504 (Age: 7, Performance: 0.21)
+2025-02-18 15:46:33,152 [INFO] Battle phase started
+2025-02-18 15:46:34,265 [INFO] Member died: 28c20e3d (Age: 4, Performance: 0.33)
+2025-02-18 15:46:35,151 [INFO] Member died: 392702e9 (Age: 4, Performance: 0.00)
+2025-02-18 15:46:35,685 [INFO] Member died: d48879cf (Age: 9, Performance: 0.24)
+2025-02-18 15:46:36,390 [INFO] Reproduction phase started
+2025-02-18 15:46:36,395 [INFO] New member born: d80ccd1c (Parent: d522d3fc)
+2025-02-18 15:46:36,399 [INFO] New member born: e5547b9c (Parent: c7aa3e79)
+2025-02-18 15:46:36,407 [INFO] New member born: 522ed80a (Parent: 14d2c54b)
+2025-02-18 15:46:36,418 [INFO] New member born: a6c8bd5a (Parent: 0d5779d0)
+2025-02-18 15:46:36,418 [INFO] Cycle 20 stats: Population=30, Avg Health=57.9, Avg Age=4.7, Best Performance=0.67
+2025-02-18 15:46:36,517 [INFO] State saved to pool/cycle_20
+2025-02-18 15:46:36,517 [INFO] Starting cycle 21
+2025-02-18 15:46:36,517 [INFO] Digestion phase started
+2025-02-18 15:46:37,598 [INFO] Member died: 6cd7fe65 (Age: 4, Performance: 0.00)
+2025-02-18 15:46:38,660 [INFO] Battle phase started
+2025-02-18 15:46:38,769 [INFO] Member died: fb146d18 (Age: 7, Performance: 0.19)
+2025-02-18 15:46:38,870 [INFO] Member died: bf64f094 (Age: 5, Performance: 0.20)
+2025-02-18 15:46:39,103 [INFO] Member died: 7fd86588 (Age: 6, Performance: 0.14)
+2025-02-18 15:46:39,541 [INFO] Member died: 4a9d8aff (Age: 13, Performance: 0.35)
+2025-02-18 15:46:42,043 [INFO] Reproduction phase started
+2025-02-18 15:46:42,049 [INFO] New member born: fc882b2b (Parent: d522d3fc)
+2025-02-18 15:46:42,054 [INFO] New member born: fdff060d (Parent: 765bd461)
+2025-02-18 15:46:42,060 [INFO] New member born: 1b8c64ed (Parent: 522ed80a)
+2025-02-18 15:46:42,066 [INFO] New member born: 5d79b1d1 (Parent: d80ccd1c)
+2025-02-18 15:46:42,073 [INFO] New member born: 0974f83b (Parent: cb567b07)
+2025-02-18 15:46:42,073 [INFO] Cycle 21 stats: Population=30, Avg Health=58.3, Avg Age=4.6, Best Performance=0.60
+2025-02-18 15:46:42,074 [INFO] Starting cycle 22
+2025-02-18 15:46:42,074 [INFO] Digestion phase started
+2025-02-18 15:46:42,245 [INFO] Member died: 2e135632 (Age: 12, Performance: 0.36)
+2025-02-18 15:46:44,169 [INFO] Battle phase started
+2025-02-18 15:46:44,463 [INFO] Member died: 8670e0ba (Age: 6, Performance: 0.19)
+2025-02-18 15:46:44,837 [INFO] Member died: 600d27c2 (Age: 13, Performance: 0.42)
+2025-02-18 15:46:46,637 [INFO] Member died: e7752982 (Age: 5, Performance: 0.31)
+2025-02-18 15:46:46,792 [INFO] Reproduction phase started
+2025-02-18 15:46:46,797 [INFO] New member born: 58e7e3d6 (Parent: 14d2c54b)
+2025-02-18 15:46:46,806 [INFO] New member born: accb20f2 (Parent: 05e429bd)
+2025-02-18 15:46:46,812 [INFO] New member born: 3ff9b74a (Parent: fc882b2b)
+2025-02-18 15:46:46,818 [INFO] New member born: df8aad26 (Parent: 1b8c64ed)
+2025-02-18 15:46:46,818 [INFO] Cycle 22 stats: Population=30, Avg Health=59.0, Avg Age=4.4, Best Performance=0.57
+2025-02-18 15:46:46,818 [INFO] Starting cycle 23
+2025-02-18 15:46:46,818 [INFO] Digestion phase started
+2025-02-18 15:46:47,405 [INFO] Member died: 5376d2dd (Age: 5, Performance: 0.25)
+2025-02-18 15:46:47,900 [INFO] Member died: aaec2db6 (Age: 4, Performance: 0.00)
+2025-02-18 15:46:48,891 [INFO] Battle phase started
+2025-02-18 15:46:49,155 [INFO] Member died: c464df64 (Age: 11, Performance: 0.30)
+2025-02-18 15:46:49,421 [INFO] Member died: 0d5779d0 (Age: 5, Performance: 0.20)
+2025-02-18 15:46:49,709 [INFO] Member died: 14eb936e (Age: 5, Performance: 0.15)
+2025-02-18 15:46:50,790 [INFO] Member died: c7aa3e79 (Age: 7, Performance: 0.42)
+2025-02-18 15:46:50,944 [INFO] Member died: 0acd6295 (Age: 8, Performance: 0.25)
+2025-02-18 15:46:51,766 [INFO] Reproduction phase started
+2025-02-18 15:46:51,771 [INFO] New member born: d038ad68 (Parent: df8aad26)
+2025-02-18 15:46:51,775 [INFO] New member born: 4736cb94 (Parent: 1b8c64ed)
+2025-02-18 15:46:51,781 [INFO] New member born: 544e891b (Parent: 14d2c54b)
+2025-02-18 15:46:51,788 [INFO] New member born: d8d7799c (Parent: 05e429bd)
+2025-02-18 15:46:51,795 [INFO] New member born: 49bc97f4 (Parent: fc882b2b)
+2025-02-18 15:46:51,801 [INFO] New member born: 7b38f7d1 (Parent: cb567b07)
+2025-02-18 15:46:51,808 [INFO] New member born: 0b7a67a8 (Parent: 473cbc5c)
+2025-02-18 15:46:51,808 [INFO] Cycle 23 stats: Population=30, Avg Health=65.9, Avg Age=3.9, Best Performance=0.67
+2025-02-18 15:46:51,808 [INFO] Starting cycle 24
+2025-02-18 15:46:51,808 [INFO] Digestion phase started
+2025-02-18 15:46:53,794 [INFO] Battle phase started
+2025-02-18 15:46:55,797 [INFO] Member died: 05e429bd (Age: 7, Performance: 0.44)
+2025-02-18 15:46:55,964 [INFO] Member died: 765bd461 (Age: 5, Performance: 0.27)
+2025-02-18 15:46:57,291 [INFO] Reproduction phase started
+2025-02-18 15:46:57,296 [INFO] New member born: 07337c2a (Parent: 1b8c64ed)
+2025-02-18 15:46:57,304 [INFO] New member born: 2beb3e64 (Parent: d038ad68)
+2025-02-18 15:46:57,304 [INFO] Cycle 24 stats: Population=30, Avg Health=61.5, Avg Age=4.5, Best Performance=0.56
+2025-02-18 15:46:57,304 [INFO] Starting cycle 25
+2025-02-18 15:46:57,304 [INFO] Digestion phase started
+2025-02-18 15:46:59,203 [INFO] Battle phase started
+2025-02-18 15:46:59,646 [INFO] Member died: 1b8c64ed (Age: 4, Performance: 0.40)
+2025-02-18 15:46:59,742 [INFO] Member died: e8ec8999 (Age: 8, Performance: 0.29)
+2025-02-18 15:47:01,209 [INFO] Member died: df8aad26 (Age: 3, Performance: 0.25)
+2025-02-18 15:47:01,452 [INFO] Reproduction phase started
+2025-02-18 15:47:01,456 [INFO] New member born: facbb096 (Parent: d038ad68)
+2025-02-18 15:47:01,465 [INFO] New member born: 78bdb1c2 (Parent: 2beb3e64)
+2025-02-18 15:47:01,471 [INFO] New member born: 894a178f (Parent: d522d3fc)
+2025-02-18 15:47:01,471 [INFO] Cycle 25 stats: Population=30, Avg Health=60.7, Avg Age=5.0, Best Performance=0.50
+2025-02-18 15:47:01,471 [INFO] Starting cycle 26
+2025-02-18 15:47:01,471 [INFO] Digestion phase started
+2025-02-18 15:47:01,637 [INFO] Member died: 14d2c54b (Age: 9, Performance: 0.50)
+2025-02-18 15:47:03,507 [INFO] Battle phase started
+2025-02-18 15:47:05,047 [INFO] Member died: 852c0c63 (Age: 8, Performance: 0.19)
+2025-02-18 15:47:06,701 [INFO] Reproduction phase started
+2025-02-18 15:47:06,705 [INFO] New member born: 4e196212 (Parent: fc882b2b)
+2025-02-18 15:47:06,709 [INFO] New member born: 23b9ab71 (Parent: d038ad68)
+2025-02-18 15:47:06,709 [INFO] Cycle 26 stats: Population=30, Avg Health=55.1, Avg Age=5.4, Best Performance=0.54
+2025-02-18 15:47:06,709 [INFO] Starting cycle 27
+2025-02-18 15:47:06,709 [INFO] Digestion phase started
+2025-02-18 15:47:07,302 [INFO] Member died: d80ccd1c (Age: 7, Performance: 0.31)
+2025-02-18 15:47:08,315 [INFO] Member died: d8d7799c (Age: 4, Performance: 0.00)
+2025-02-18 15:47:09,078 [INFO] Battle phase started
+2025-02-18 15:47:09,564 [INFO] Member died: d038ad68 (Age: 4, Performance: 0.40)
+2025-02-18 15:47:10,335 [INFO] Member died: accb20f2 (Age: 5, Performance: 0.09)
+2025-02-18 15:47:10,878 [INFO] Member died: e5547b9c (Age: 7, Performance: 0.24)
+2025-02-18 15:47:11,193 [INFO] Member died: 58e7e3d6 (Age: 5, Performance: 0.17)
+2025-02-18 15:47:11,610 [INFO] Member died: fdff060d (Age: 6, Performance: 0.15)
+2025-02-18 15:47:11,716 [INFO] Member died: 07337c2a (Age: 3, Performance: 0.00)
+2025-02-18 15:47:11,717 [INFO] Reproduction phase started
+2025-02-18 15:47:11,721 [INFO] New member born: 35d8e786 (Parent: 894a178f)
+2025-02-18 15:47:11,726 [INFO] New member born: d2e64a3f (Parent: fc882b2b)
+2025-02-18 15:47:11,732 [INFO] New member born: 1b2d1ffb (Parent: facbb096)
+2025-02-18 15:47:11,739 [INFO] New member born: 3950f503 (Parent: 23b9ab71)
+2025-02-18 15:47:11,746 [INFO] New member born: 46a776ee (Parent: cb567b07)
+2025-02-18 15:47:11,754 [INFO] New member born: 63ef26f2 (Parent: 522ed80a)
+2025-02-18 15:47:11,758 [INFO] New member born: f788dfb7 (Parent: 544e891b)
+2025-02-18 15:47:11,766 [INFO] New member born: 01fbff2b (Parent: 755e6671)
+2025-02-18 15:47:11,766 [INFO] Cycle 27 stats: Population=30, Avg Health=64.3, Avg Age=5.0, Best Performance=0.60
+2025-02-18 15:47:11,767 [INFO] Starting cycle 28
+2025-02-18 15:47:11,767 [INFO] Digestion phase started
+2025-02-18 15:47:13,969 [INFO] Battle phase started
+2025-02-18 15:47:14,417 [INFO] Member died: 0974f83b (Age: 7, Performance: 0.28)
+2025-02-18 15:47:14,792 [INFO] Member died: b723567c (Age: 10, Performance: 0.24)
+2025-02-18 15:47:14,891 [INFO] Member died: 473cbc5c (Age: 17, Performance: 0.38)
+2025-02-18 15:47:16,746 [INFO] Reproduction phase started
+2025-02-18 15:47:16,751 [INFO] New member born: 4ef5c095 (Parent: 894a178f)
+2025-02-18 15:47:16,755 [INFO] New member born: 38751ffe (Parent: 3950f503)
+2025-02-18 15:47:16,761 [INFO] New member born: 036d3d8e (Parent: 46a776ee)
+2025-02-18 15:47:16,761 [INFO] Cycle 28 stats: Population=30, Avg Health=61.8, Avg Age=4.9, Best Performance=0.62
+2025-02-18 15:47:16,761 [INFO] Starting cycle 29
+2025-02-18 15:47:16,761 [INFO] Digestion phase started
+2025-02-18 15:47:18,930 [INFO] Battle phase started
+2025-02-18 15:47:19,310 [INFO] Member died: 78bdb1c2 (Age: 4, Performance: 0.10)
+2025-02-18 15:47:21,495 [INFO] Member died: 522ed80a (Age: 9, Performance: 0.40)
+2025-02-18 15:47:21,791 [INFO] Reproduction phase started
+2025-02-18 15:47:21,795 [INFO] New member born: 8c780ce4 (Parent: 3950f503)
+2025-02-18 15:47:21,803 [INFO] New member born: 1ea3fe6b (Parent: fc882b2b)
+2025-02-18 15:47:21,803 [INFO] Cycle 29 stats: Population=30, Avg Health=58.4, Avg Age=5.5, Best Performance=0.60
+2025-02-18 15:47:21,803 [INFO] Starting cycle 30
+2025-02-18 15:47:21,803 [INFO] Digestion phase started
+2025-02-18 15:47:23,712 [INFO] Battle phase started
+2025-02-18 15:47:23,829 [INFO] Member died: 63ef26f2 (Age: 3, Performance: 0.00)
+2025-02-18 15:47:24,562 [INFO] Member died: a6c8bd5a (Age: 10, Performance: 0.28)
+2025-02-18 15:47:24,894 [INFO] Member died: cb567b07 (Age: 14, Performance: 0.42)
+2025-02-18 15:47:26,114 [INFO] Reproduction phase started
+2025-02-18 15:47:26,119 [INFO] New member born: 8c56902b (Parent: 544e891b)
+2025-02-18 15:47:26,125 [INFO] New member born: 6abd2068 (Parent: 46a776ee)
+2025-02-18 15:47:26,132 [INFO] New member born: 35cd3c87 (Parent: 4ef5c095)
+2025-02-18 15:47:26,132 [INFO] Cycle 30 stats: Population=30, Avg Health=56.3, Avg Age=5.6, Best Performance=0.52
+2025-02-18 15:47:26,239 [INFO] State saved to pool/cycle_30
+2025-02-18 15:47:26,239 [INFO] Starting cycle 31
+2025-02-18 15:47:26,239 [INFO] Digestion phase started
+2025-02-18 15:47:26,582 [INFO] Member died: 3ff9b74a (Age: 9, Performance: 0.22)
+2025-02-18 15:47:26,955 [INFO] Member died: 0b7a67a8 (Age: 8, Performance: 0.24)
+2025-02-18 15:47:27,088 [INFO] Member died: facbb096 (Age: 6, Performance: 0.27)
+2025-02-18 15:47:27,313 [INFO] Member died: 23b9ab71 (Age: 5, Performance: 0.22)
+2025-02-18 15:47:28,475 [INFO] Battle phase started
+2025-02-18 15:47:28,952 [INFO] Member died: 38751ffe (Age: 3, Performance: 0.00)
+2025-02-18 15:47:29,972 [INFO] Member died: 894a178f (Age: 6, Performance: 0.36)
+2025-02-18 15:47:30,229 [INFO] Member died: 755e6671 (Age: 13, Performance: 0.38)
+2025-02-18 15:47:30,229 [INFO] Reproduction phase started
+2025-02-18 15:47:30,233 [INFO] New member born: 1663e0a8 (Parent: 8c780ce4)
+2025-02-18 15:47:30,242 [INFO] New member born: 0a60f491 (Parent: 544e891b)
+2025-02-18 15:47:30,249 [INFO] New member born: a98c52b9 (Parent: 46a776ee)
+2025-02-18 15:47:30,255 [INFO] New member born: 3d63895e (Parent: 036d3d8e)
+2025-02-18 15:47:30,261 [INFO] New member born: 0169cd0a (Parent: 6abd2068)
+2025-02-18 15:47:30,265 [INFO] New member born: 51145d53 (Parent: 35cd3c87)
+2025-02-18 15:47:30,274 [INFO] New member born: 4fe6d960 (Parent: d522d3fc)
+2025-02-18 15:47:30,274 [INFO] Cycle 31 stats: Population=30, Avg Health=62.8, Avg Age=4.9, Best Performance=0.60
+2025-02-18 15:47:30,277 [INFO] Starting cycle 32
+2025-02-18 15:47:30,277 [INFO] Digestion phase started
+2025-02-18 15:47:32,201 [INFO] Battle phase started
+2025-02-18 15:47:32,604 [INFO] Member died: 1b2d1ffb (Age: 5, Performance: 0.15)
+2025-02-18 15:47:33,874 [INFO] Member died: 2beb3e64 (Age: 8, Performance: 0.25)
+2025-02-18 15:47:34,108 [INFO] Member died: 3950f503 (Age: 5, Performance: 0.27)
+2025-02-18 15:47:34,756 [INFO] Member died: 4736cb94 (Age: 9, Performance: 0.27)
+2025-02-18 15:47:34,931 [INFO] Member died: fc882b2b (Age: 11, Performance: 0.46)
+2025-02-18 15:47:35,471 [INFO] Member died: 1ea3fe6b (Age: 3, Performance: 0.18)
+2025-02-18 15:47:35,773 [INFO] Reproduction phase started
+2025-02-18 15:47:35,777 [INFO] New member born: 520f756e (Parent: 1663e0a8)
+2025-02-18 15:47:35,782 [INFO] New member born: 1c217ecb (Parent: 4fe6d960)
+2025-02-18 15:47:35,789 [INFO] New member born: eb8b3a0b (Parent: d522d3fc)
+2025-02-18 15:47:35,796 [INFO] New member born: ab277b1a (Parent: 8c780ce4)
+2025-02-18 15:47:35,803 [INFO] New member born: 52917a1d (Parent: 6abd2068)
+2025-02-18 15:47:35,808 [INFO] New member born: c31f5e83 (Parent: 35cd3c87)
+2025-02-18 15:47:35,808 [INFO] Cycle 32 stats: Population=30, Avg Health=64.4, Avg Age=4.5, Best Performance=0.67
+2025-02-18 15:47:35,808 [INFO] Starting cycle 33
+2025-02-18 15:47:35,808 [INFO] Digestion phase started
+2025-02-18 15:47:36,114 [INFO] Member died: 7b38f7d1 (Age: 10, Performance: 0.27)
+2025-02-18 15:47:37,887 [INFO] Battle phase started
+2025-02-18 15:47:38,514 [INFO] Member died: 46a776ee (Age: 6, Performance: 0.38)
+2025-02-18 15:47:38,891 [INFO] Member died: d2e64a3f (Age: 6, Performance: 0.15)
+2025-02-18 15:47:40,244 [INFO] Member died: 4ef5c095 (Age: 5, Performance: 0.29)
+2025-02-18 15:47:40,461 [INFO] Reproduction phase started
+2025-02-18 15:47:40,466 [INFO] New member born: fcfbe2d4 (Parent: d522d3fc)
+2025-02-18 15:47:40,474 [INFO] New member born: e0fd39c3 (Parent: 35cd3c87)
+2025-02-18 15:47:40,482 [INFO] New member born: 264dc582 (Parent: 1663e0a8)
+2025-02-18 15:47:40,489 [INFO] New member born: 355f5961 (Parent: 0169cd0a)
+2025-02-18 15:47:40,489 [INFO] Cycle 33 stats: Population=30, Avg Health=63.9, Avg Age=4.6, Best Performance=0.52
+2025-02-18 15:47:40,489 [INFO] Starting cycle 34
+2025-02-18 15:47:40,489 [INFO] Digestion phase started
+2025-02-18 15:47:40,828 [INFO] Member died: 4e196212 (Age: 8, Performance: 0.20)
+2025-02-18 15:47:42,438 [INFO] Battle phase started
+2025-02-18 15:47:42,581 [INFO] Member died: f788dfb7 (Age: 7, Performance: 0.14)
+2025-02-18 15:47:42,870 [INFO] Member died: 036d3d8e (Age: 6, Performance: 0.29)
+2025-02-18 15:47:43,080 [INFO] Member died: 6abd2068 (Age: 4, Performance: 0.25)
+2025-02-18 15:47:44,712 [INFO] Reproduction phase started
+2025-02-18 15:47:44,717 [INFO] New member born: cab860ac (Parent: 0169cd0a)
+2025-02-18 15:47:44,721 [INFO] New member born: 51c0a4f8 (Parent: 51145d53)
+2025-02-18 15:47:44,731 [INFO] New member born: 0588f220 (Parent: 4fe6d960)
+2025-02-18 15:47:44,737 [INFO] New member born: 4ccb5b3e (Parent: 1c217ecb)
+2025-02-18 15:47:44,737 [INFO] Cycle 34 stats: Population=30, Avg Health=63.0, Avg Age=4.8, Best Performance=0.53
+2025-02-18 15:47:44,737 [INFO] Starting cycle 35
+2025-02-18 15:47:44,737 [INFO] Digestion phase started
+2025-02-18 15:47:46,867 [INFO] Battle phase started
+2025-02-18 15:47:47,279 [INFO] Member died: 8c780ce4 (Age: 6, Performance: 0.36)
+2025-02-18 15:47:47,603 [INFO] Member died: 35d8e786 (Age: 8, Performance: 0.18)
+2025-02-18 15:47:49,993 [INFO] Reproduction phase started
+2025-02-18 15:47:49,997 [INFO] New member born: d5d7b3d1 (Parent: 0169cd0a)
+2025-02-18 15:47:50,003 [INFO] New member born: 3530a3e3 (Parent: 51145d53)
+2025-02-18 15:47:50,003 [INFO] Cycle 35 stats: Population=30, Avg Health=56.3, Avg Age=5.3, Best Performance=0.56
+2025-02-18 15:47:50,003 [INFO] Starting cycle 36
+2025-02-18 15:47:50,003 [INFO] Digestion phase started
+2025-02-18 15:47:50,151 [INFO] Member died: d522d3fc (Age: 17, Performance: 0.50)
+2025-02-18 15:47:50,601 [INFO] Member died: 35cd3c87 (Age: 6, Performance: 0.42)
+2025-02-18 15:47:52,258 [INFO] Battle phase started
+2025-02-18 15:47:52,501 [INFO] Member died: 01fbff2b (Age: 9, Performance: 0.25)
+2025-02-18 15:47:53,173 [INFO] Member died: ab277b1a (Age: 4, Performance: 0.00)
+2025-02-18 15:47:53,689 [INFO] Member died: 8c56902b (Age: 6, Performance: 0.14)
+2025-02-18 15:47:54,637 [INFO] Reproduction phase started
+2025-02-18 15:47:54,642 [INFO] New member born: 66f89ff1 (Parent: 0169cd0a)
+2025-02-18 15:47:54,647 [INFO] New member born: a591eeaa (Parent: 4fe6d960)
+2025-02-18 15:47:54,653 [INFO] New member born: b8bc4ced (Parent: cab860ac)
+2025-02-18 15:47:54,662 [INFO] New member born: 9eafe19d (Parent: 1c217ecb)
+2025-02-18 15:47:54,669 [INFO] New member born: 46780b90 (Parent: 0a60f491)
+2025-02-18 15:47:54,669 [INFO] Cycle 36 stats: Population=30, Avg Health=59.5, Avg Age=4.9, Best Performance=0.58
+2025-02-18 15:47:54,669 [INFO] Starting cycle 37
+2025-02-18 15:47:54,669 [INFO] Digestion phase started
+2025-02-18 15:47:56,683 [INFO] Battle phase started
+2025-02-18 15:47:56,837 [INFO] Member died: 264dc582 (Age: 4, Performance: 0.10)
+2025-02-18 15:47:58,226 [INFO] Member died: 1663e0a8 (Age: 6, Performance: 0.36)
+2025-02-18 15:47:59,142 [INFO] Member died: 52917a1d (Age: 5, Performance: 0.17)
+2025-02-18 15:47:59,783 [INFO] Reproduction phase started
+2025-02-18 15:47:59,789 [INFO] New member born: a6531062 (Parent: 66f89ff1)
+2025-02-18 15:47:59,796 [INFO] New member born: 52024790 (Parent: a591eeaa)
+2025-02-18 15:47:59,806 [INFO] New member born: 2dff064a (Parent: 544e891b)
+2025-02-18 15:47:59,806 [INFO] Cycle 37 stats: Population=30, Avg Health=54.8, Avg Age=5.4, Best Performance=0.67
+2025-02-18 15:47:59,806 [INFO] Starting cycle 38
+2025-02-18 15:47:59,806 [INFO] Digestion phase started
+2025-02-18 15:48:01,934 [INFO] Battle phase started
+2025-02-18 15:48:02,046 [INFO] Member died: 1c217ecb (Age: 6, Performance: 0.36)
+2025-02-18 15:48:02,327 [INFO] Member died: eb8b3a0b (Age: 6, Performance: 0.15)
+2025-02-18 15:48:03,962 [INFO] Reproduction phase started
+2025-02-18 15:48:03,966 [INFO] New member born: 8eef6af5 (Parent: 51c0a4f8)
+2025-02-18 15:48:03,970 [INFO] New member born: a1d962b6 (Parent: b8bc4ced)
+2025-02-18 15:48:03,970 [INFO] Cycle 38 stats: Population=30, Avg Health=50.6, Avg Age=6.0, Best Performance=0.50
+2025-02-18 15:48:03,970 [INFO] Starting cycle 39
+2025-02-18 15:48:03,970 [INFO] Digestion phase started
+2025-02-18 15:48:04,183 [INFO] Member died: 49bc97f4 (Age: 16, Performance: 0.35)
+2025-02-18 15:48:06,007 [INFO] Battle phase started
+2025-02-18 15:48:06,113 [INFO] Member died: 0a60f491 (Age: 8, Performance: 0.36)
+2025-02-18 15:48:06,213 [INFO] Member died: 0588f220 (Age: 5, Performance: 0.17)
+2025-02-18 15:48:06,949 [INFO] Member died: fcfbe2d4 (Age: 6, Performance: 0.20)
+2025-02-18 15:48:07,164 [INFO] Member died: 355f5961 (Age: 6, Performance: 0.21)
+2025-02-18 15:48:07,495 [INFO] Member died: 3530a3e3 (Age: 4, Performance: 0.00)
+2025-02-18 15:48:07,851 [INFO] Reproduction phase started
+2025-02-18 15:48:07,856 [INFO] New member born: 2753ee1b (Parent: a1d962b6)
+2025-02-18 15:48:07,861 [INFO] New member born: 926a7896 (Parent: 4fe6d960)
+2025-02-18 15:48:07,869 [INFO] New member born: 830ce064 (Parent: 51c0a4f8)
+2025-02-18 15:48:07,876 [INFO] New member born: 26515894 (Parent: a591eeaa)
+2025-02-18 15:48:07,883 [INFO] New member born: d446dc67 (Parent: cab860ac)
+2025-02-18 15:48:07,889 [INFO] New member born: 59776d9f (Parent: 3d63895e)
+2025-02-18 15:48:07,889 [INFO] Cycle 39 stats: Population=30, Avg Health=55.3, Avg Age=5.5, Best Performance=0.67
+2025-02-18 15:48:07,889 [INFO] Starting cycle 40
+2025-02-18 15:48:07,889 [INFO] Digestion phase started
+2025-02-18 15:48:09,932 [INFO] Battle phase started
+2025-02-18 15:48:10,170 [INFO] Member died: 51c0a4f8 (Age: 6, Performance: 0.40)
+2025-02-18 15:48:10,464 [INFO] Member died: 4fe6d960 (Age: 9, Performance: 0.45)
+2025-02-18 15:48:10,732 [INFO] Member died: a591eeaa (Age: 4, Performance: 0.33)
+2025-02-18 15:48:11,272 [INFO] Member died: 66f89ff1 (Age: 4, Performance: 0.22)
+2025-02-18 15:48:12,163 [INFO] Member died: 544e891b (Age: 17, Performance: 0.47)
+2025-02-18 15:48:13,008 [INFO] Member died: 5d79b1d1 (Age: 19, Performance: 0.33)
+2025-02-18 15:48:13,008 [INFO] Reproduction phase started
+2025-02-18 15:48:13,013 [INFO] New member born: 0ae79e32 (Parent: a1d962b6)
+2025-02-18 15:48:13,018 [INFO] New member born: 243daee7 (Parent: 926a7896)
+2025-02-18 15:48:13,028 [INFO] New member born: a1303673 (Parent: 51145d53)
+2025-02-18 15:48:13,176 [INFO] New member born: d440aea7 (Parent: c31f5e83)
+2025-02-18 15:48:13,180 [INFO] New member born: de1d9a11 (Parent: b8bc4ced)
+2025-02-18 15:48:13,184 [INFO] New member born: a7f6c0e6 (Parent: a6531062)
+2025-02-18 15:48:13,184 [INFO] Cycle 40 stats: Population=30, Avg Health=59.7, Avg Age=4.6, Best Performance=0.50
+2025-02-18 15:48:13,290 [INFO] State saved to pool/cycle_40
+2025-02-18 15:48:13,292 [INFO] Starting cycle 41
+2025-02-18 15:48:13,292 [INFO] Digestion phase started
+2025-02-18 15:48:15,124 [INFO] Battle phase started
+2025-02-18 15:48:16,144 [INFO] Member died: a98c52b9 (Age: 10, Performance: 0.24)
+2025-02-18 15:48:16,579 [INFO] Member died: 51145d53 (Age: 10, Performance: 0.41)
+2025-02-18 15:48:16,906 [INFO] Member died: e0fd39c3 (Age: 8, Performance: 0.21)
+2025-02-18 15:48:17,075 [INFO] Reproduction phase started
+2025-02-18 15:48:17,080 [INFO] New member born: 5a2328ff (Parent: 0ae79e32)
+2025-02-18 15:48:17,087 [INFO] New member born: b630c475 (Parent: a1303673)
+2025-02-18 15:48:17,094 [INFO] New member born: bfa7e8fb (Parent: de1d9a11)
+2025-02-18 15:48:17,094 [INFO] Cycle 41 stats: Population=30, Avg Health=58.0, Avg Age=4.6, Best Performance=0.50
+2025-02-18 15:48:17,094 [INFO] Starting cycle 42
+2025-02-18 15:48:17,094 [INFO] Digestion phase started
+2025-02-18 15:48:19,137 [INFO] Battle phase started
+2025-02-18 15:48:19,241 [INFO] Member died: a6531062 (Age: 5, Performance: 0.20)
+2025-02-18 15:48:19,646 [INFO] Member died: cab860ac (Age: 8, Performance: 0.33)
+2025-02-18 15:48:20,057 [INFO] Member died: b8bc4ced (Age: 6, Performance: 0.33)
+2025-02-18 15:48:20,635 [INFO] Member died: 3d63895e (Age: 11, Performance: 0.33)
+2025-02-18 15:48:20,836 [INFO] Member died: 4ccb5b3e (Age: 8, Performance: 0.25)
+2025-02-18 15:48:21,359 [INFO] Reproduction phase started
+2025-02-18 15:48:21,366 [INFO] New member born: f3c539b8 (Parent: 0ae79e32)
+2025-02-18 15:48:21,371 [INFO] New member born: 460daa5d (Parent: a1303673)
+2025-02-18 15:48:21,376 [INFO] New member born: fa722479 (Parent: de1d9a11)
+2025-02-18 15:48:21,383 [INFO] New member born: 1fca61f6 (Parent: a7f6c0e6)
+2025-02-18 15:48:21,392 [INFO] New member born: edad1862 (Parent: c31f5e83)
+2025-02-18 15:48:21,392 [INFO] Cycle 42 stats: Population=30, Avg Health=61.5, Avg Age=4.4, Best Performance=0.50
+2025-02-18 15:48:21,392 [INFO] Starting cycle 43
+2025-02-18 15:48:21,393 [INFO] Digestion phase started
+2025-02-18 15:48:23,480 [INFO] Battle phase started
+2025-02-18 15:48:23,695 [INFO] Member died: 926a7896 (Age: 4, Performance: 0.12)
+2025-02-18 15:48:25,248 [INFO] Member died: 0169cd0a (Age: 12, Performance: 0.42)
+2025-02-18 15:48:25,492 [INFO] Reproduction phase started
+2025-02-18 15:48:25,497 [INFO] New member born: 85484e16 (Parent: f3c539b8)
+2025-02-18 15:48:25,502 [INFO] New member born: 336ce62b (Parent: a1d962b6)
+2025-02-18 15:48:25,502 [INFO] Cycle 43 stats: Population=30, Avg Health=56.9, Avg Age=4.8, Best Performance=0.67
+2025-02-18 15:48:25,502 [INFO] Starting cycle 44
+2025-02-18 15:48:25,502 [INFO] Digestion phase started
+2025-02-18 15:48:25,934 [INFO] Member died: 2dff064a (Age: 7, Performance: 0.15)
+2025-02-18 15:48:27,553 [INFO] Battle phase started
+2025-02-18 15:48:28,427 [INFO] Member died: d5d7b3d1 (Age: 9, Performance: 0.21)
+2025-02-18 15:48:28,745 [INFO] Member died: 520f756e (Age: 12, Performance: 0.26)
+2025-02-18 15:48:29,101 [INFO] Member died: a1303673 (Age: 4, Performance: 0.25)
+2025-02-18 15:48:29,414 [INFO] Member died: de1d9a11 (Age: 4, Performance: 0.25)
+2025-02-18 15:48:29,523 [INFO] Member died: 26515894 (Age: 5, Performance: 0.17)
+2025-02-18 15:48:29,727 [INFO] Reproduction phase started
+2025-02-18 15:48:29,731 [INFO] New member born: 1c27300c (Parent: 336ce62b)
+2025-02-18 15:48:29,736 [INFO] New member born: 49caa9b2 (Parent: 0ae79e32)
+2025-02-18 15:48:29,742 [INFO] New member born: ba5ce00d (Parent: 460daa5d)
+2025-02-18 15:48:29,748 [INFO] New member born: 25b39140 (Parent: fa722479)
+2025-02-18 15:48:29,756 [INFO] New member born: 648d995e (Parent: edad1862)
+2025-02-18 15:48:29,763 [INFO] New member born: 1945300a (Parent: 52024790)
+2025-02-18 15:48:29,763 [INFO] Cycle 44 stats: Population=30, Avg Health=61.8, Avg Age=4.5, Best Performance=0.67
+2025-02-18 15:48:29,763 [INFO] Starting cycle 45
+2025-02-18 15:48:29,763 [INFO] Digestion phase started
+2025-02-18 15:48:31,914 [INFO] Battle phase started
+2025-02-18 15:48:32,062 [INFO] Member died: 9eafe19d (Age: 9, Performance: 0.24)
+2025-02-18 15:48:32,682 [INFO] Member died: 46780b90 (Age: 9, Performance: 0.25)
+2025-02-18 15:48:33,581 [INFO] Member died: b630c475 (Age: 4, Performance: 0.00)
+2025-02-18 15:48:33,770 [INFO] Member died: 59776d9f (Age: 6, Performance: 0.14)
+2025-02-18 15:48:34,277 [INFO] Member died: 243daee7 (Age: 5, Performance: 0.15)
+2025-02-18 15:48:34,496 [INFO] Member died: 8eef6af5 (Age: 7, Performance: 0.22)
+2025-02-18 15:48:34,901 [INFO] Reproduction phase started
+2025-02-18 15:48:34,906 [INFO] New member born: ece5f5c8 (Parent: 1c27300c)
+2025-02-18 15:48:34,910 [INFO] New member born: 8b434ec7 (Parent: edad1862)
+2025-02-18 15:48:34,914 [INFO] New member born: 3466a0a5 (Parent: 460daa5d)
+2025-02-18 15:48:34,921 [INFO] New member born: 139c88db (Parent: fa722479)
+2025-02-18 15:48:34,930 [INFO] New member born: cbb3101a (Parent: 49caa9b2)
+2025-02-18 15:48:34,936 [INFO] New member born: 0013c82c (Parent: 1945300a)
+2025-02-18 15:48:34,936 [INFO] Cycle 45 stats: Population=30, Avg Health=65.3, Avg Age=4.1, Best Performance=0.67
+2025-02-18 15:48:34,936 [INFO] Starting cycle 46
+2025-02-18 15:48:34,936 [INFO] Digestion phase started
+2025-02-18 15:48:36,909 [INFO] Battle phase started
+2025-02-18 15:48:37,900 [INFO] Member died: d440aea7 (Age: 6, Performance: 0.15)
+2025-02-18 15:48:38,373 [INFO] Member died: 5a2328ff (Age: 5, Performance: 0.17)
+2025-02-18 15:48:39,461 [INFO] Reproduction phase started
+2025-02-18 15:48:39,465 [INFO] New member born: 92914975 (Parent: edad1862)
+2025-02-18 15:48:39,470 [INFO] New member born: 22cf5cbc (Parent: 1c27300c)
+2025-02-18 15:48:39,470 [INFO] Cycle 46 stats: Population=30, Avg Health=60.7, Avg Age=4.8, Best Performance=0.60
+2025-02-18 15:48:39,470 [INFO] Starting cycle 47
+2025-02-18 15:48:39,470 [INFO] Digestion phase started
+2025-02-18 15:48:41,479 [INFO] Battle phase started
+2025-02-18 15:48:42,923 [INFO] Member died: c31f5e83 (Age: 15, Performance: 0.39)
+2025-02-18 15:48:43,032 [INFO] Member died: 52024790 (Age: 10, Performance: 0.33)
+2025-02-18 15:48:43,751 [INFO] Member died: 1fca61f6 (Age: 5, Performance: 0.15)
+2025-02-18 15:48:44,497 [INFO] Reproduction phase started
+2025-02-18 15:48:44,501 [INFO] New member born: bdead19b (Parent: 139c88db)
+2025-02-18 15:48:44,506 [INFO] New member born: 1896547b (Parent: edad1862)
+2025-02-18 15:48:44,520 [INFO] New member born: 858fb520 (Parent: a1d962b6)
+2025-02-18 15:48:44,520 [INFO] Cycle 47 stats: Population=30, Avg Health=58.3, Avg Age=4.8, Best Performance=0.60
+2025-02-18 15:48:44,520 [INFO] Starting cycle 48
+2025-02-18 15:48:44,520 [INFO] Digestion phase started
+2025-02-18 15:48:46,691 [INFO] Battle phase started
+2025-02-18 15:48:46,787 [INFO] Member died: ba5ce00d (Age: 4, Performance: 0.00)
+2025-02-18 15:48:47,500 [INFO] Member died: 1c27300c (Age: 4, Performance: 0.33)
+2025-02-18 15:48:47,835 [INFO] Member died: bfa7e8fb (Age: 7, Performance: 0.22)
+2025-02-18 15:48:48,217 [INFO] Member died: 0ae79e32 (Age: 8, Performance: 0.39)
+2025-02-18 15:48:49,074 [INFO] Reproduction phase started
+2025-02-18 15:48:49,079 [INFO] New member born: 1ffe8551 (Parent: 1896547b)
+2025-02-18 15:48:49,083 [INFO] New member born: 9b36b46a (Parent: 49caa9b2)
+2025-02-18 15:48:49,087 [INFO] New member born: 7d00374f (Parent: ece5f5c8)
+2025-02-18 15:48:49,091 [INFO] New member born: d259def6 (Parent: 139c88db)
+2025-02-18 15:48:49,091 [INFO] Cycle 48 stats: Population=30, Avg Health=57.9, Avg Age=5.0, Best Performance=0.67
+2025-02-18 15:48:49,091 [INFO] Starting cycle 49
+2025-02-18 15:48:49,091 [INFO] Digestion phase started
+2025-02-18 15:48:51,085 [INFO] Battle phase started
+2025-02-18 15:48:52,938 [INFO] Member died: 648d995e (Age: 5, Performance: 0.20)
+2025-02-18 15:48:53,438 [INFO] Member died: 92914975 (Age: 3, Performance: 0.00)
+2025-02-18 15:48:54,263 [INFO] Reproduction phase started
+2025-02-18 15:48:54,270 [INFO] New member born: dfc16946 (Parent: d259def6)
+2025-02-18 15:48:54,276 [INFO] New member born: 63062e2d (Parent: edad1862)
+2025-02-18 15:48:54,276 [INFO] Cycle 49 stats: Population=30, Avg Health=51.9, Avg Age=5.7, Best Performance=0.67
+2025-02-18 15:48:54,276 [INFO] Starting cycle 50
+2025-02-18 15:48:54,276 [INFO] Digestion phase started
+2025-02-18 15:48:56,494 [INFO] Battle phase started
+2025-02-18 15:48:56,631 [INFO] Member died: 0013c82c (Age: 5, Performance: 0.09)
+2025-02-18 15:48:56,739 [INFO] Member died: a1d962b6 (Age: 12, Performance: 0.42)
+2025-02-18 15:48:57,060 [INFO] Member died: f3c539b8 (Age: 8, Performance: 0.33)
+2025-02-18 15:48:57,528 [INFO] Member died: 3466a0a5 (Age: 5, Performance: 0.17)
+2025-02-18 15:48:57,852 [INFO] Member died: 2753ee1b (Age: 11, Performance: 0.31)
+2025-02-18 15:48:57,975 [INFO] Member died: 460daa5d (Age: 8, Performance: 0.35)
+2025-02-18 15:48:58,271 [INFO] Member died: 85484e16 (Age: 7, Performance: 0.14)
+2025-02-18 15:48:58,483 [INFO] Member died: 336ce62b (Age: 7, Performance: 0.29)
+2025-02-18 15:48:58,874 [INFO] Reproduction phase started
+2025-02-18 15:48:58,881 [INFO] New member born: 624486cb (Parent: edad1862)
+2025-02-18 15:48:58,886 [INFO] New member born: c305e278 (Parent: d259def6)
+2025-02-18 15:48:58,893 [INFO] New member born: 1cba270f (Parent: 49caa9b2)
+2025-02-18 15:48:58,900 [INFO] New member born: 840c1928 (Parent: 1896547b)
+2025-02-18 15:48:58,905 [INFO] New member born: ca054722 (Parent: cbb3101a)
+2025-02-18 15:48:58,911 [INFO] New member born: 39919b2b (Parent: 1ffe8551)
+2025-02-18 15:48:58,915 [INFO] New member born: 950d2695 (Parent: 63062e2d)
+2025-02-18 15:48:58,924 [INFO] New member born: d949f0a2 (Parent: 9b36b46a)
+2025-02-18 15:48:58,924 [INFO] Cycle 50 stats: Population=30, Avg Health=63.4, Avg Age=4.6, Best Performance=0.60
+2025-02-18 15:48:59,028 [INFO] State saved to pool/cycle_50
+2025-02-18 15:48:59,028 [INFO] Starting cycle 51
+2025-02-18 15:48:59,028 [INFO] Digestion phase started
+2025-02-18 15:48:59,857 [INFO] Member died: 139c88db (Age: 6, Performance: 0.43)
+2025-02-18 15:49:01,282 [INFO] Battle phase started
+2025-02-18 15:49:01,948 [INFO] Member died: d446dc67 (Age: 12, Performance: 0.29)
+2025-02-18 15:49:03,013 [INFO] Member died: 858fb520 (Age: 4, Performance: 0.10)
+2025-02-18 15:49:03,339 [INFO] Reproduction phase started
+2025-02-18 15:49:03,344 [INFO] New member born: 6451f644 (Parent: c305e278)
+2025-02-18 15:49:03,352 [INFO] New member born: 98290430 (Parent: 49caa9b2)
+2025-02-18 15:49:03,362 [INFO] New member born: d5a50f83 (Parent: 1896547b)
+2025-02-18 15:49:03,362 [INFO] Cycle 51 stats: Population=30, Avg Health=59.8, Avg Age=4.9, Best Performance=0.67
+2025-02-18 15:49:03,362 [INFO] Starting cycle 52
+2025-02-18 15:49:03,362 [INFO] Digestion phase started
+2025-02-18 15:49:03,866 [INFO] Member died: 1945300a (Age: 8, Performance: 0.27)
+2025-02-18 15:49:05,441 [INFO] Battle phase started
+2025-02-18 15:49:05,710 [INFO] Member died: a7f6c0e6 (Age: 12, Performance: 0.32)
+2025-02-18 15:49:05,807 [INFO] Member died: d259def6 (Age: 4, Performance: 0.33)
+2025-02-18 15:49:06,217 [INFO] Member died: fa722479 (Age: 10, Performance: 0.33)
+2025-02-18 15:49:07,533 [INFO] Member died: 9b36b46a (Age: 4, Performance: 0.33)
+2025-02-18 15:49:07,656 [INFO] Reproduction phase started
+2025-02-18 15:49:07,661 [INFO] New member born: 5041c91d (Parent: c305e278)
+2025-02-18 15:49:07,666 [INFO] New member born: 598ab315 (Parent: edad1862)
+2025-02-18 15:49:07,674 [INFO] New member born: fc48543c (Parent: 1896547b)
+2025-02-18 15:49:07,686 [INFO] New member born: d3600335 (Parent: 950d2695)
+2025-02-18 15:49:07,691 [INFO] New member born: c28741b3 (Parent: 98290430)
+2025-02-18 15:49:07,691 [INFO] Cycle 52 stats: Population=30, Avg Health=63.0, Avg Age=4.6, Best Performance=0.67
+2025-02-18 15:49:07,691 [INFO] Starting cycle 53
+2025-02-18 15:49:07,691 [INFO] Digestion phase started
+2025-02-18 15:49:09,755 [INFO] Battle phase started
+2025-02-18 15:49:09,920 [INFO] Member died: edad1862 (Age: 11, Performance: 0.54)
+2025-02-18 15:49:10,015 [INFO] Member died: 1896547b (Age: 6, Performance: 0.50)
+2025-02-18 15:49:10,506 [INFO] Member died: bdead19b (Age: 6, Performance: 0.20)
+2025-02-18 15:49:12,391 [INFO] Member died: 6451f644 (Age: 2, Performance: 0.00)
+2025-02-18 15:49:12,584 [INFO] Reproduction phase started
+2025-02-18 15:49:12,590 [INFO] New member born: 8c5a63ee (Parent: c305e278)
+2025-02-18 15:49:12,597 [INFO] New member born: be4a5dbe (Parent: 63062e2d)
+2025-02-18 15:49:12,606 [INFO] New member born: 9d1ee5a1 (Parent: 950d2695)
+2025-02-18 15:49:12,613 [INFO] New member born: e4951d0f (Parent: 98290430)
+2025-02-18 15:49:12,613 [INFO] Cycle 53 stats: Population=30, Avg Health=62.3, Avg Age=4.8, Best Performance=0.62
+2025-02-18 15:49:12,613 [INFO] Starting cycle 54
+2025-02-18 15:49:12,613 [INFO] Digestion phase started
+2025-02-18 15:49:12,931 [INFO] Member died: 8b434ec7 (Age: 9, Performance: 0.29)
+2025-02-18 15:49:14,869 [INFO] Battle phase started
+2025-02-18 15:49:15,325 [INFO] Member died: ca054722 (Age: 4, Performance: 0.18)
+2025-02-18 15:49:16,489 [INFO] Member died: 25b39140 (Age: 10, Performance: 0.23)
+2025-02-18 15:49:16,610 [INFO] Member died: 624486cb (Age: 4, Performance: 0.10)
+2025-02-18 15:49:16,728 [INFO] Member died: ece5f5c8 (Age: 9, Performance: 0.33)
+2025-02-18 15:49:16,728 [INFO] Reproduction phase started
+2025-02-18 15:49:16,734 [INFO] New member born: 84b3018e (Parent: 63062e2d)
+2025-02-18 15:49:16,743 [INFO] New member born: d60c8253 (Parent: 98290430)
+2025-02-18 15:49:16,750 [INFO] New member born: a48d3d86 (Parent: 598ab315)
+2025-02-18 15:49:16,757 [INFO] New member born: fb973ae0 (Parent: fc48543c)
+2025-02-18 15:49:16,762 [INFO] New member born: 74f8ab0d (Parent: 8c5a63ee)
+2025-02-18 15:49:16,762 [INFO] Cycle 54 stats: Population=30, Avg Health=64.1, Avg Age=4.6, Best Performance=0.50
+2025-02-18 15:49:16,763 [INFO] Starting cycle 55
+2025-02-18 15:49:16,763 [INFO] Digestion phase started
+2025-02-18 15:49:17,052 [INFO] Member died: 22cf5cbc (Age: 9, Performance: 0.22)
+2025-02-18 15:49:17,733 [INFO] Member died: d949f0a2 (Age: 5, Performance: 0.11)
+2025-02-18 15:49:18,959 [INFO] Battle phase started
+2025-02-18 15:49:19,526 [INFO] Member died: c305e278 (Age: 5, Performance: 0.42)
+2025-02-18 15:49:21,702 [INFO] Reproduction phase started
+2025-02-18 15:49:21,707 [INFO] New member born: 84bdb4a0 (Parent: 98290430)
+2025-02-18 15:49:21,711 [INFO] New member born: b4ae0380 (Parent: 63062e2d)
+2025-02-18 15:49:21,715 [INFO] New member born: 8ae7c3ed (Parent: fc48543c)
+2025-02-18 15:49:21,715 [INFO] Cycle 55 stats: Population=30, Avg Health=62.2, Avg Age=5.0, Best Performance=0.56
+2025-02-18 15:49:21,715 [INFO] Starting cycle 56
+2025-02-18 15:49:21,715 [INFO] Digestion phase started
+2025-02-18 15:49:23,845 [INFO] Battle phase started
+2025-02-18 15:49:24,689 [INFO] Member died: 63062e2d (Age: 7, Performance: 0.44)
+2025-02-18 15:49:24,927 [INFO] Member died: 830ce064 (Age: 17, Performance: 0.32)
+2025-02-18 15:49:25,064 [INFO] Member died: c28741b3 (Age: 4, Performance: 0.17)
+2025-02-18 15:49:26,039 [INFO] Member died: 1cba270f (Age: 6, Performance: 0.15)
+2025-02-18 15:49:26,334 [INFO] Member died: 5041c91d (Age: 4, Performance: 0.10)
+2025-02-18 15:49:26,547 [INFO] Reproduction phase started
+2025-02-18 15:49:26,552 [INFO] New member born: 6bd68345 (Parent: b4ae0380)
+2025-02-18 15:49:26,557 [INFO] New member born: 0e8d922b (Parent: 8ae7c3ed)
+2025-02-18 15:49:26,568 [INFO] New member born: 4b9771c4 (Parent: 49caa9b2)
+2025-02-18 15:49:26,574 [INFO] New member born: 4e468aaf (Parent: fc48543c)
+2025-02-18 15:49:26,579 [INFO] New member born: 1a51417f (Parent: 8c5a63ee)
+2025-02-18 15:49:26,579 [INFO] Cycle 56 stats: Population=30, Avg Health=62.1, Avg Age=4.7, Best Performance=0.67
+2025-02-18 15:49:26,579 [INFO] Starting cycle 57
+2025-02-18 15:49:26,579 [INFO] Digestion phase started
+2025-02-18 15:49:28,543 [INFO] Battle phase started
+2025-02-18 15:49:29,246 [INFO] Member died: d3600335 (Age: 5, Performance: 0.09)
+2025-02-18 15:49:29,365 [INFO] Member died: 950d2695 (Age: 7, Performance: 0.35)
+2025-02-18 15:49:29,479 [INFO] Member died: dfc16946 (Age: 8, Performance: 0.18)
+2025-02-18 15:49:30,693 [INFO] Reproduction phase started
+2025-02-18 15:49:30,698 [INFO] New member born: 3fcc8d74 (Parent: b4ae0380)
+2025-02-18 15:49:30,702 [INFO] New member born: 88ee296e (Parent: 8c5a63ee)
+2025-02-18 15:49:30,707 [INFO] New member born: e99650e5 (Parent: d60c8253)
+2025-02-18 15:49:30,707 [INFO] Cycle 57 stats: Population=30, Avg Health=60.8, Avg Age=5.0, Best Performance=0.60
+2025-02-18 15:49:30,708 [INFO] Starting cycle 58
+2025-02-18 15:49:30,708 [INFO] Digestion phase started
+2025-02-18 15:49:32,628 [INFO] Battle phase started
+2025-02-18 15:49:32,914 [INFO] Member died: 598ab315 (Age: 6, Performance: 0.25)
+2025-02-18 15:49:33,315 [INFO] Member died: 98290430 (Age: 7, Performance: 0.44)
+2025-02-18 15:49:33,567 [INFO] Member died: d5a50f83 (Age: 7, Performance: 0.20)
+2025-02-18 15:49:35,126 [INFO] Member died: 84bdb4a0 (Age: 3, Performance: 0.00)
+2025-02-18 15:49:35,312 [INFO] Reproduction phase started
+2025-02-18 15:49:35,317 [INFO] New member born: 4c04923b (Parent: b4ae0380)
+2025-02-18 15:49:35,325 [INFO] New member born: 54fcbe3e (Parent: 6bd68345)
+2025-02-18 15:49:35,334 [INFO] New member born: 44ab7e8d (Parent: 0e8d922b)
+2025-02-18 15:49:35,340 [INFO] New member born: b0d554d9 (Parent: 4e468aaf)
+2025-02-18 15:49:35,340 [INFO] Cycle 58 stats: Population=30, Avg Health=59.3, Avg Age=5.3, Best Performance=0.67
+2025-02-18 15:49:35,340 [INFO] Starting cycle 59
+2025-02-18 15:49:35,340 [INFO] Digestion phase started
+2025-02-18 15:49:35,822 [INFO] Member died: 8c5a63ee (Age: 6, Performance: 0.42)
+2025-02-18 15:49:36,272 [INFO] Member died: fb973ae0 (Age: 5, Performance: 0.25)
+2025-02-18 15:49:37,250 [INFO] Battle phase started
+2025-02-18 15:49:37,446 [INFO] Member died: 8ae7c3ed (Age: 4, Performance: 0.22)
+2025-02-18 15:49:38,379 [INFO] Member died: be4a5dbe (Age: 6, Performance: 0.20)
+2025-02-18 15:49:39,688 [INFO] Member died: 4e468aaf (Age: 3, Performance: 0.25)
+2025-02-18 15:49:40,092 [INFO] Member died: a48d3d86 (Age: 5, Performance: 0.17)
+2025-02-18 15:49:40,282 [INFO] Reproduction phase started
+2025-02-18 15:49:40,289 [INFO] New member born: b4dd3219 (Parent: b4ae0380)
+2025-02-18 15:49:40,305 [INFO] New member born: 9817c18b (Parent: 74f8ab0d)
+2025-02-18 15:49:40,312 [INFO] New member born: e6ab5a33 (Parent: fc48543c)
+2025-02-18 15:49:40,318 [INFO] New member born: b910c3d4 (Parent: 6bd68345)
+2025-02-18 15:49:40,322 [INFO] New member born: 3b66484e (Parent: 4c04923b)
+2025-02-18 15:49:40,328 [INFO] New member born: 9f1a4f77 (Parent: 1ffe8551)
+2025-02-18 15:49:40,328 [INFO] Cycle 59 stats: Population=30, Avg Health=60.5, Avg Age=5.3, Best Performance=0.64
+2025-02-18 15:49:40,328 [INFO] Starting cycle 60
+2025-02-18 15:49:40,328 [INFO] Digestion phase started
+2025-02-18 15:49:40,980 [INFO] Member died: 84b3018e (Age: 6, Performance: 0.21)
+2025-02-18 15:49:41,693 [INFO] Member died: 1a51417f (Age: 4, Performance: 0.00)
+2025-02-18 15:49:42,578 [INFO] Battle phase started
+2025-02-18 15:49:44,213 [INFO] Member died: fc48543c (Age: 8, Performance: 0.44)
+2025-02-18 15:49:44,213 [INFO] Reproduction phase started
+2025-02-18 15:49:44,218 [INFO] New member born: 72b9db3d (Parent: 74f8ab0d)
+2025-02-18 15:49:44,222 [INFO] New member born: bbc6b5b7 (Parent: 4c04923b)
+2025-02-18 15:49:44,231 [INFO] New member born: 694aaeb0 (Parent: 9817c18b)
+2025-02-18 15:49:44,231 [INFO] Cycle 60 stats: Population=30, Avg Health=58.7, Avg Age=5.7, Best Performance=0.62
+2025-02-18 15:49:44,331 [INFO] State saved to pool/cycle_60
+2025-02-18 15:49:44,332 [INFO] Starting cycle 61
+2025-02-18 15:49:44,332 [INFO] Digestion phase started
+2025-02-18 15:49:46,361 [INFO] Battle phase started
+2025-02-18 15:49:48,188 [INFO] Member died: 49caa9b2 (Age: 17, Performance: 0.48)
+2025-02-18 15:49:48,665 [INFO] Reproduction phase started
+2025-02-18 15:49:48,670 [INFO] New member born: 8a9f4cb0 (Parent: 72b9db3d)
+2025-02-18 15:49:48,670 [INFO] Cycle 61 stats: Population=30, Avg Health=51.4, Avg Age=6.1, Best Performance=0.67
+2025-02-18 15:49:48,670 [INFO] Starting cycle 62
+2025-02-18 15:49:48,670 [INFO] Digestion phase started
+2025-02-18 15:49:49,946 [INFO] Member died: b0d554d9 (Age: 4, Performance: 0.00)
+2025-02-18 15:49:50,682 [INFO] Battle phase started
+2025-02-18 15:49:51,191 [INFO] Member died: 4b9771c4 (Age: 6, Performance: 0.15)
+2025-02-18 15:49:51,279 [INFO] Member died: 7d00374f (Age: 14, Performance: 0.29)
+2025-02-18 15:49:52,417 [INFO] Member died: d60c8253 (Age: 8, Performance: 0.35)
+2025-02-18 15:49:52,545 [INFO] Member died: 39919b2b (Age: 12, Performance: 0.33)
+2025-02-18 15:49:52,892 [INFO] Reproduction phase started
+2025-02-18 15:49:52,896 [INFO] New member born: 6b483369 (Parent: 72b9db3d)
+2025-02-18 15:49:52,901 [INFO] New member born: 7f02ed7c (Parent: b910c3d4)
+2025-02-18 15:49:52,908 [INFO] New member born: 49a752a4 (Parent: cbb3101a)
+2025-02-18 15:49:52,915 [INFO] New member born: 83316c14 (Parent: 9817c18b)
+2025-02-18 15:49:52,920 [INFO] New member born: 2909dad9 (Parent: 0e8d922b)
+2025-02-18 15:49:52,920 [INFO] Cycle 62 stats: Population=30, Avg Health=54.0, Avg Age=5.7, Best Performance=0.60
+2025-02-18 15:49:52,920 [INFO] Starting cycle 63
+2025-02-18 15:49:52,920 [INFO] Digestion phase started
+2025-02-18 15:49:53,835 [INFO] Member died: b4dd3219 (Age: 4, Performance: 0.00)
+2025-02-18 15:49:54,773 [INFO] Battle phase started
+2025-02-18 15:49:55,676 [INFO] Member died: e4951d0f (Age: 10, Performance: 0.29)
+2025-02-18 15:49:56,051 [INFO] Member died: 0e8d922b (Age: 7, Performance: 0.35)
+2025-02-18 15:49:56,135 [INFO] Member died: 1ffe8551 (Age: 15, Performance: 0.39)
+2025-02-18 15:49:56,235 [INFO] Member died: 3b66484e (Age: 4, Performance: 0.00)
+2025-02-18 15:49:57,518 [INFO] Reproduction phase started
+2025-02-18 15:49:57,523 [INFO] New member born: ff2fa0d3 (Parent: 74f8ab0d)
+2025-02-18 15:49:57,534 [INFO] New member born: 688d5129 (Parent: 6b483369)
+2025-02-18 15:49:57,541 [INFO] New member born: 56fb5565 (Parent: 49a752a4)
+2025-02-18 15:49:57,548 [INFO] New member born: 65c5b5de (Parent: 83316c14)
+2025-02-18 15:49:57,556 [INFO] New member born: cbed29c5 (Parent: 2909dad9)
+2025-02-18 15:49:57,556 [INFO] Cycle 63 stats: Population=30, Avg Health=55.3, Avg Age=5.3, Best Performance=0.50
+2025-02-18 15:49:57,556 [INFO] Starting cycle 64
+2025-02-18 15:49:57,556 [INFO] Digestion phase started
+2025-02-18 15:49:57,935 [INFO] Member died: b4ae0380 (Age: 9, Performance: 0.47)
+2025-02-18 15:49:59,563 [INFO] Battle phase started
+2025-02-18 15:50:00,186 [INFO] Member died: 6bd68345 (Age: 8, Performance: 0.31)
+2025-02-18 15:50:00,289 [INFO] Member died: b910c3d4 (Age: 5, Performance: 0.27)
+2025-02-18 15:50:00,759 [INFO] Member died: cbb3101a (Age: 19, Performance: 0.42)
+2025-02-18 15:50:01,071 [INFO] Member died: e99650e5 (Age: 7, Performance: 0.19)
+2025-02-18 15:50:01,672 [INFO] Member died: 840c1928 (Age: 14, Performance: 0.32)
+2025-02-18 15:50:02,443 [INFO] Reproduction phase started
+2025-02-18 15:50:02,447 [INFO] New member born: 2479deb3 (Parent: 6b483369)
+2025-02-18 15:50:02,452 [INFO] New member born: 26042123 (Parent: 49a752a4)
+2025-02-18 15:50:02,457 [INFO] New member born: a1e90cf0 (Parent: 9817c18b)
+2025-02-18 15:50:02,463 [INFO] New member born: 59c65af0 (Parent: 688d5129)
+2025-02-18 15:50:02,470 [INFO] New member born: 5538c434 (Parent: 56fb5565)
+2025-02-18 15:50:02,481 [INFO] New member born: f0e18e74 (Parent: bbc6b5b7)
+2025-02-18 15:50:02,481 [INFO] Cycle 64 stats: Population=30, Avg Health=59.8, Avg Age=4.3, Best Performance=0.60
+2025-02-18 15:50:02,481 [INFO] Starting cycle 65
+2025-02-18 15:50:02,481 [INFO] Digestion phase started
+2025-02-18 15:50:04,580 [INFO] Battle phase started
+2025-02-18 15:50:06,444 [INFO] Member died: 694aaeb0 (Age: 5, Performance: 0.23)
+2025-02-18 15:50:06,547 [INFO] Member died: 88ee296e (Age: 8, Performance: 0.25)
+2025-02-18 15:50:07,810 [INFO] Member died: 8a9f4cb0 (Age: 4, Performance: 0.10)
+2025-02-18 15:50:08,122 [INFO] Reproduction phase started
+2025-02-18 15:50:08,127 [INFO] New member born: fe86bfd4 (Parent: 49a752a4)
+2025-02-18 15:50:08,131 [INFO] New member born: 5157d3aa (Parent: 9817c18b)
+2025-02-18 15:50:08,138 [INFO] New member born: 62632efe (Parent: 56fb5565)
+2025-02-18 15:50:08,138 [INFO] Cycle 65 stats: Population=30, Avg Health=56.0, Avg Age=4.7, Best Performance=0.57
+2025-02-18 15:50:08,138 [INFO] Starting cycle 66
+2025-02-18 15:50:08,138 [INFO] Digestion phase started
+2025-02-18 15:50:10,283 [INFO] Battle phase started
+2025-02-18 15:50:10,423 [INFO] Member died: 44ab7e8d (Age: 8, Performance: 0.18)
+2025-02-18 15:50:11,037 [INFO] Member died: 83316c14 (Age: 4, Performance: 0.29)
+2025-02-18 15:50:11,130 [INFO] Member died: 688d5129 (Age: 3, Performance: 0.14)
+2025-02-18 15:50:11,463 [INFO] Member died: 4c04923b (Age: 8, Performance: 0.31)
+2025-02-18 15:50:11,724 [INFO] Member died: 72b9db3d (Age: 6, Performance: 0.39)
+2025-02-18 15:50:11,809 [INFO] Member died: 3fcc8d74 (Age: 9, Performance: 0.21)
+2025-02-18 15:50:11,970 [INFO] Member died: 54fcbe3e (Age: 8, Performance: 0.21)
+2025-02-18 15:50:12,126 [INFO] Reproduction phase started
+2025-02-18 15:50:12,130 [INFO] New member born: 9fa492ba (Parent: 49a752a4)
+2025-02-18 15:50:12,135 [INFO] New member born: 89a5c9c7 (Parent: 9817c18b)
+2025-02-18 15:50:12,148 [INFO] New member born: 4ec9974c (Parent: 74f8ab0d)
+2025-02-18 15:50:12,152 [INFO] New member born: 6918dc99 (Parent: 26042123)
+2025-02-18 15:50:12,159 [INFO] New member born: 5491f11f (Parent: 5538c434)
+2025-02-18 15:50:12,164 [INFO] New member born: fd01ff68 (Parent: fe86bfd4)
+2025-02-18 15:50:12,169 [INFO] New member born: b9870f57 (Parent: 62632efe)
+2025-02-18 15:50:12,169 [INFO] Cycle 66 stats: Population=30, Avg Health=63.4, Avg Age=4.2, Best Performance=0.56
+2025-02-18 15:50:12,169 [INFO] Starting cycle 67
+2025-02-18 15:50:12,170 [INFO] Digestion phase started
+2025-02-18 15:50:12,678 [INFO] Member died: bbc6b5b7 (Age: 7, Performance: 0.33)
+2025-02-18 15:50:14,337 [INFO] Battle phase started
+2025-02-18 15:50:15,104 [INFO] Member died: 49a752a4 (Age: 5, Performance: 0.45)
+2025-02-18 15:50:16,142 [INFO] Member died: 6b483369 (Age: 5, Performance: 0.33)
+2025-02-18 15:50:16,255 [INFO] Member died: 59c65af0 (Age: 3, Performance: 0.00)
+2025-02-18 15:50:16,255 [INFO] Reproduction phase started
+2025-02-18 15:50:16,259 [INFO] New member born: 281c23bc (Parent: 9fa492ba)
+2025-02-18 15:50:16,264 [INFO] New member born: fe07d846 (Parent: fe86bfd4)
+2025-02-18 15:50:16,272 [INFO] New member born: 511a5325 (Parent: 5538c434)
+2025-02-18 15:50:16,278 [INFO] New member born: 817f4576 (Parent: 62632efe)
+2025-02-18 15:50:16,278 [INFO] Cycle 67 stats: Population=30, Avg Health=62.1, Avg Age=4.5, Best Performance=0.75
+2025-02-18 15:50:16,279 [INFO] Starting cycle 68
+2025-02-18 15:50:16,279 [INFO] Digestion phase started
+2025-02-18 15:50:18,244 [INFO] Battle phase started
+2025-02-18 15:50:18,668 [INFO] Member died: cbed29c5 (Age: 5, Performance: 0.09)
+2025-02-18 15:50:19,389 [INFO] Member died: f0e18e74 (Age: 4, Performance: 0.10)
+2025-02-18 15:50:19,987 [INFO] Member died: 74f8ab0d (Age: 14, Performance: 0.48)
+2025-02-18 15:50:20,917 [INFO] Reproduction phase started
+2025-02-18 15:50:20,921 [INFO] New member born: 570c19ab (Parent: 9fa492ba)
+2025-02-18 15:50:20,925 [INFO] New member born: 134b7b21 (Parent: 62632efe)
+2025-02-18 15:50:20,930 [INFO] New member born: 0d46c3f8 (Parent: 5538c434)
+2025-02-18 15:50:20,930 [INFO] Cycle 68 stats: Population=30, Avg Health=59.0, Avg Age=4.7, Best Performance=0.67
+2025-02-18 15:50:20,930 [INFO] Starting cycle 69
+2025-02-18 15:50:20,930 [INFO] Digestion phase started
+2025-02-18 15:50:21,218 [INFO] Member died: 9f1a4f77 (Age: 10, Performance: 0.29)
+2025-02-18 15:50:23,001 [INFO] Battle phase started
+2025-02-18 15:50:23,408 [INFO] Member died: e6ab5a33 (Age: 10, Performance: 0.25)
+2025-02-18 15:50:24,000 [INFO] Member died: 56fb5565 (Age: 6, Performance: 0.31)
+2025-02-18 15:50:24,171 [INFO] Member died: fe86bfd4 (Age: 4, Performance: 0.30)
+2025-02-18 15:50:24,350 [INFO] Member died: a1e90cf0 (Age: 5, Performance: 0.15)
+2025-02-18 15:50:24,478 [INFO] Member died: 2909dad9 (Age: 7, Performance: 0.25)
+2025-02-18 15:50:25,536 [INFO] Member died: 26042123 (Age: 5, Performance: 0.25)
+2025-02-18 15:50:25,758 [INFO] Member died: 89a5c9c7 (Age: 3, Performance: 0.11)
+2025-02-18 15:50:25,844 [INFO] Member died: 9817c18b (Age: 10, Performance: 0.48)
+2025-02-18 15:50:26,032 [INFO] Reproduction phase started
+2025-02-18 15:50:26,036 [INFO] New member born: d7b1ff26 (Parent: 570c19ab)
+2025-02-18 15:50:26,041 [INFO] New member born: 022a58ee (Parent: 9fa492ba)
+2025-02-18 15:50:26,049 [INFO] New member born: 89e5c17e (Parent: 511a5325)
+2025-02-18 15:50:26,056 [INFO] New member born: 93d08207 (Parent: b9870f57)
+2025-02-18 15:50:26,062 [INFO] New member born: be7af981 (Parent: fd01ff68)
+2025-02-18 15:50:26,067 [INFO] New member born: 61e8e4fc (Parent: 134b7b21)
+2025-02-18 15:50:26,073 [INFO] New member born: 8b08d87c (Parent: 9d1ee5a1)
+2025-02-18 15:50:26,080 [INFO] New member born: 52c5d77f (Parent: 5491f11f)
+2025-02-18 15:50:26,080 [INFO] Cycle 69 stats: Population=29, Avg Health=68.8, Avg Age=3.8, Best Performance=0.67
+2025-02-18 15:50:26,080 [INFO] Starting cycle 70
+2025-02-18 15:50:26,080 [INFO] Digestion phase started
+2025-02-18 15:50:28,128 [INFO] Battle phase started
+2025-02-18 15:50:28,303 [INFO] Member died: 9fa492ba (Age: 4, Performance: 0.50)
+2025-02-18 15:50:30,043 [INFO] Member died: 5157d3aa (Age: 5, Performance: 0.17)
+2025-02-18 15:50:31,426 [INFO] Reproduction phase started
+2025-02-18 15:50:31,431 [INFO] New member born: 05bf3d6d (Parent: 89e5c17e)
+2025-02-18 15:50:31,436 [INFO] New member born: 1ab2e202 (Parent: 8b08d87c)
+2025-02-18 15:50:31,443 [INFO] New member born: 8d0a059b (Parent: b9870f57)
+2025-02-18 15:50:31,443 [INFO] Cycle 70 stats: Population=30, Avg Health=61.7, Avg Age=4.4, Best Performance=0.67
+2025-02-18 15:50:31,555 [INFO] State saved to pool/cycle_70
+2025-02-18 15:50:31,555 [INFO] Starting cycle 71
+2025-02-18 15:50:31,555 [INFO] Digestion phase started
+2025-02-18 15:50:31,806 [INFO] Member died: 65c5b5de (Age: 8, Performance: 0.20)
+2025-02-18 15:50:31,995 [INFO] Member died: 62632efe (Age: 6, Performance: 0.42)
+2025-02-18 15:50:33,607 [INFO] Battle phase started
+2025-02-18 15:50:34,092 [INFO] Member died: 817f4576 (Age: 4, Performance: 0.27)
+2025-02-18 15:50:34,517 [INFO] Member died: 570c19ab (Age: 3, Performance: 0.25)
+2025-02-18 15:50:35,674 [INFO] Member died: 7f02ed7c (Age: 9, Performance: 0.30)
+2025-02-18 15:50:36,211 [INFO] Member died: ff2fa0d3 (Age: 8, Performance: 0.29)
+2025-02-18 15:50:36,211 [INFO] Reproduction phase started
+2025-02-18 15:50:36,216 [INFO] New member born: edc3911c (Parent: 05bf3d6d)
+2025-02-18 15:50:36,220 [INFO] New member born: 3c5989c1 (Parent: 8d0a059b)
+2025-02-18 15:50:36,225 [INFO] New member born: a36c4644 (Parent: 8b08d87c)
+2025-02-18 15:50:36,232 [INFO] New member born: fb1690c4 (Parent: 511a5325)
+2025-02-18 15:50:36,242 [INFO] New member born: 8c4b7b99 (Parent: d7b1ff26)
+2025-02-18 15:50:36,247 [INFO] New member born: 871967f7 (Parent: 61e8e4fc)
+2025-02-18 15:50:36,247 [INFO] Cycle 71 stats: Population=30, Avg Health=64.4, Avg Age=4.1, Best Performance=0.75
+2025-02-18 15:50:36,249 [INFO] Starting cycle 72
+2025-02-18 15:50:36,249 [INFO] Digestion phase started
+2025-02-18 15:50:38,297 [INFO] Battle phase started
+2025-02-18 15:50:39,067 [INFO] Member died: 9d1ee5a1 (Age: 19, Performance: 0.40)
+2025-02-18 15:50:39,185 [INFO] Member died: 2479deb3 (Age: 8, Performance: 0.25)
+2025-02-18 15:50:39,876 [INFO] Member died: 4ec9974c (Age: 6, Performance: 0.20)
+2025-02-18 15:50:40,211 [INFO] Member died: 5538c434 (Age: 8, Performance: 0.38)
+2025-02-18 15:50:41,075 [INFO] Reproduction phase started
+2025-02-18 15:50:41,080 [INFO] New member born: 951f49d4 (Parent: 3c5989c1)
+2025-02-18 15:50:41,084 [INFO] New member born: 39056fb7 (Parent: 8b08d87c)
+2025-02-18 15:50:41,093 [INFO] New member born: 4b4fd98f (Parent: b9870f57)
+2025-02-18 15:50:41,100 [INFO] New member born: 1918aca7 (Parent: d7b1ff26)
+2025-02-18 15:50:41,100 [INFO] Cycle 72 stats: Population=30, Avg Health=64.1, Avg Age=3.8, Best Performance=0.67
+2025-02-18 15:50:41,101 [INFO] Starting cycle 73
+2025-02-18 15:50:41,101 [INFO] Digestion phase started
+2025-02-18 15:50:41,338 [INFO] Member died: fd01ff68 (Age: 7, Performance: 0.31)
+2025-02-18 15:50:41,496 [INFO] Member died: 281c23bc (Age: 6, Performance: 0.17)
+2025-02-18 15:50:43,182 [INFO] Battle phase started
+2025-02-18 15:50:43,464 [INFO] Member died: 05bf3d6d (Age: 3, Performance: 0.33)
+2025-02-18 15:50:45,914 [INFO] Reproduction phase started
+2025-02-18 15:50:45,918 [INFO] New member born: 981f4771 (Parent: 8b08d87c)
+2025-02-18 15:50:45,922 [INFO] New member born: 84ab6b01 (Parent: fb1690c4)
+2025-02-18 15:50:45,929 [INFO] New member born: 41e7fc76 (Parent: 8d0a059b)
+2025-02-18 15:50:45,929 [INFO] Cycle 73 stats: Population=30, Avg Health=61.6, Avg Age=4.2, Best Performance=0.60
+2025-02-18 15:50:45,929 [INFO] Starting cycle 74
+2025-02-18 15:50:45,929 [INFO] Digestion phase started
+2025-02-18 15:50:48,111 [INFO] Battle phase started
+2025-02-18 15:50:49,903 [INFO] Member died: 8b08d87c (Age: 5, Performance: 0.50)
+2025-02-18 15:50:50,618 [INFO] Member died: fe07d846 (Age: 7, Performance: 0.24)
+2025-02-18 15:50:50,831 [INFO] Reproduction phase started
+2025-02-18 15:50:50,836 [INFO] New member born: 7f456783 (Parent: 39056fb7)
+2025-02-18 15:50:50,841 [INFO] New member born: 71ade1b5 (Parent: 4b4fd98f)
+2025-02-18 15:50:50,841 [INFO] Cycle 74 stats: Population=30, Avg Health=56.5, Avg Age=4.8, Best Performance=0.60
+2025-02-18 15:50:50,841 [INFO] Starting cycle 75
+2025-02-18 15:50:50,841 [INFO] Digestion phase started
+2025-02-18 15:50:52,171 [INFO] Member died: 8c4b7b99 (Age: 4, Performance: 0.00)
+2025-02-18 15:50:52,909 [INFO] Battle phase started
+2025-02-18 15:50:54,741 [INFO] Member died: 871967f7 (Age: 4, Performance: 0.10)
+2025-02-18 15:50:55,574 [INFO] Member died: 89e5c17e (Age: 6, Performance: 0.31)
+2025-02-18 15:50:55,778 [INFO] Reproduction phase started
+2025-02-18 15:50:55,782 [INFO] New member born: 9fd8663c (Parent: 7f456783)
+2025-02-18 15:50:55,787 [INFO] New member born: e8a6ec5b (Parent: 39056fb7)
+2025-02-18 15:50:55,794 [INFO] New member born: 9672693d (Parent: 981f4771)
+2025-02-18 15:50:55,794 [INFO] Cycle 75 stats: Population=30, Avg Health=52.8, Avg Age=5.4, Best Performance=0.75
+2025-02-18 15:50:55,794 [INFO] Starting cycle 76
+2025-02-18 15:50:55,794 [INFO] Digestion phase started
+2025-02-18 15:50:55,999 [INFO] Member died: b9870f57 (Age: 10, Performance: 0.48)
+2025-02-18 15:50:56,149 [INFO] Member died: 134b7b21 (Age: 8, Performance: 0.27)
+2025-02-18 15:50:56,398 [INFO] Member died: 022a58ee (Age: 7, Performance: 0.25)
+2025-02-18 15:50:57,852 [INFO] Battle phase started
+2025-02-18 15:50:58,915 [INFO] Member died: 3c5989c1 (Age: 5, Performance: 0.31)
+2025-02-18 15:50:59,193 [INFO] Member died: 39056fb7 (Age: 4, Performance: 0.40)
+2025-02-18 15:50:59,888 [INFO] Member died: 0d46c3f8 (Age: 8, Performance: 0.25)
+2025-02-18 15:51:00,191 [INFO] Member died: d7b1ff26 (Age: 7, Performance: 0.39)
+2025-02-18 15:51:00,795 [INFO] Member died: 84ab6b01 (Age: 3, Performance: 0.00)
+2025-02-18 15:51:01,126 [INFO] Reproduction phase started
+2025-02-18 15:51:01,131 [INFO] New member born: c61792ec (Parent: 7f456783)
+2025-02-18 15:51:01,135 [INFO] New member born: 5fe22ad9 (Parent: e8a6ec5b)
+2025-02-18 15:51:01,142 [INFO] New member born: 93bd6786 (Parent: 981f4771)
+2025-02-18 15:51:01,148 [INFO] New member born: 5152837d (Parent: 9fd8663c)
+2025-02-18 15:51:01,154 [INFO] New member born: 8a5d9723 (Parent: 52c5d77f)
+2025-02-18 15:51:01,162 [INFO] New member born: b819f7c5 (Parent: 8d0a059b)
+2025-02-18 15:51:01,170 [INFO] New member born: 668f7af5 (Parent: 61e8e4fc)
+2025-02-18 15:51:01,175 [INFO] New member born: 4f2320ca (Parent: a36c4644)
+2025-02-18 15:51:01,175 [INFO] Cycle 76 stats: Population=30, Avg Health=59.8, Avg Age=4.6, Best Performance=0.71
+2025-02-18 15:51:01,175 [INFO] Starting cycle 77
+2025-02-18 15:51:01,175 [INFO] Digestion phase started
+2025-02-18 15:51:02,093 [INFO] Member died: fb1690c4 (Age: 6, Performance: 0.33)
+2025-02-18 15:51:03,394 [INFO] Battle phase started
+2025-02-18 15:51:03,628 [INFO] Member died: 1918aca7 (Age: 5, Performance: 0.09)
+2025-02-18 15:51:04,058 [INFO] Member died: edc3911c (Age: 6, Performance: 0.15)
+2025-02-18 15:51:04,772 [INFO] Member died: 8d0a059b (Age: 7, Performance: 0.41)
+2025-02-18 15:51:05,751 [INFO] Member died: 61e8e4fc (Age: 8, Performance: 0.39)
+2025-02-18 15:51:05,751 [INFO] Reproduction phase started
+2025-02-18 15:51:05,757 [INFO] New member born: 3fb2218d (Parent: b819f7c5)
+2025-02-18 15:51:05,761 [INFO] New member born: fb9902a5 (Parent: e8a6ec5b)
+2025-02-18 15:51:05,766 [INFO] New member born: a2bd57c1 (Parent: 981f4771)
+2025-02-18 15:51:05,773 [INFO] New member born: 4fcaf99f (Parent: 5152837d)
+2025-02-18 15:51:05,780 [INFO] New member born: 51ed940a (Parent: 8a5d9723)
+2025-02-18 15:51:05,781 [INFO] Cycle 77 stats: Population=30, Avg Health=62.2, Avg Age=4.6, Best Performance=0.67
+2025-02-18 15:51:05,782 [INFO] Starting cycle 78
+2025-02-18 15:51:05,782 [INFO] Digestion phase started
+2025-02-18 15:51:05,819 [INFO] Member died: 6918dc99 (Age: 12, Performance: 0.31)
+2025-02-18 15:51:07,756 [INFO] Battle phase started
+2025-02-18 15:51:08,997 [INFO] Member died: be7af981 (Age: 9, Performance: 0.29)
+2025-02-18 15:51:09,459 [INFO] Member died: 41e7fc76 (Age: 5, Performance: 0.10)
+2025-02-18 15:51:09,812 [INFO] Member died: 981f4771 (Age: 5, Performance: 0.42)
+2025-02-18 15:51:09,812 [INFO] Reproduction phase started
+2025-02-18 15:51:09,816 [INFO] New member born: 515ab58c (Parent: e8a6ec5b)
+2025-02-18 15:51:09,821 [INFO] New member born: fb0f90af (Parent: 5152837d)
+2025-02-18 15:51:09,827 [INFO] New member born: 0c3eb732 (Parent: 3fb2218d)
+2025-02-18 15:51:09,833 [INFO] New member born: 34d29457 (Parent: fb9902a5)
+2025-02-18 15:51:09,833 [INFO] Cycle 78 stats: Population=30, Avg Health=63.1, Avg Age=4.5, Best Performance=0.57
+2025-02-18 15:51:09,834 [INFO] Starting cycle 79
+2025-02-18 15:51:09,834 [INFO] Digestion phase started
+2025-02-18 15:51:11,892 [INFO] Battle phase started
+2025-02-18 15:51:12,654 [INFO] Member died: 9fd8663c (Age: 4, Performance: 0.12)
+2025-02-18 15:51:13,620 [INFO] Member died: e8a6ec5b (Age: 4, Performance: 0.44)
+2025-02-18 15:51:14,139 [INFO] Member died: 7f456783 (Age: 5, Performance: 0.43)
+2025-02-18 15:51:14,440 [INFO] Reproduction phase started
+2025-02-18 15:51:14,444 [INFO] New member born: c4cd83ef (Parent: 5152837d)
+2025-02-18 15:51:14,452 [INFO] New member born: 18cb5eea (Parent: b819f7c5)
+2025-02-18 15:51:14,459 [INFO] New member born: fa3b77a0 (Parent: fb9902a5)
+2025-02-18 15:51:14,459 [INFO] Cycle 79 stats: Population=30, Avg Health=61.2, Avg Age=5.1, Best Performance=0.50
+2025-02-18 15:51:14,459 [INFO] Starting cycle 80
+2025-02-18 15:51:14,459 [INFO] Digestion phase started
+2025-02-18 15:51:16,555 [INFO] Battle phase started
+2025-02-18 15:51:16,831 [INFO] Member died: 668f7af5 (Age: 4, Performance: 0.10)
+2025-02-18 15:51:17,125 [INFO] Member died: 71ade1b5 (Age: 6, Performance: 0.00)
+2025-02-18 15:51:17,400 [INFO] Member died: 5152837d (Age: 4, Performance: 0.38)
+2025-02-18 15:51:18,509 [INFO] Member died: 8a5d9723 (Age: 4, Performance: 0.12)
+2025-02-18 15:51:19,066 [INFO] Member died: 93bd6786 (Age: 4, Performance: 0.10)
+2025-02-18 15:51:19,446 [INFO] Member died: fb9902a5 (Age: 3, Performance: 0.29)
+2025-02-18 15:51:19,656 [INFO] Reproduction phase started
+2025-02-18 15:51:19,661 [INFO] New member born: a27ef2dc (Parent: a2bd57c1)
+2025-02-18 15:51:19,669 [INFO] New member born: 0c1f33aa (Parent: 4f2320ca)
+2025-02-18 15:51:19,675 [INFO] New member born: 14f7b416 (Parent: 18cb5eea)
+2025-02-18 15:51:19,687 [INFO] New member born: b22a4442 (Parent: 511a5325)
+2025-02-18 15:51:19,693 [INFO] New member born: 1bbcbd13 (Parent: 4b4fd98f)
+2025-02-18 15:51:19,700 [INFO] New member born: 81036d60 (Parent: 5491f11f)
+2025-02-18 15:51:19,700 [INFO] Cycle 80 stats: Population=30, Avg Health=62.7, Avg Age=5.3, Best Performance=0.57
+2025-02-18 15:51:19,807 [INFO] State saved to pool/cycle_80
+2025-02-18 15:51:19,807 [INFO] Starting cycle 81
+2025-02-18 15:51:19,807 [INFO] Digestion phase started
+2025-02-18 15:51:21,938 [INFO] Battle phase started
+2025-02-18 15:51:24,126 [INFO] Member died: 515ab58c (Age: 3, Performance: 0.00)
+2025-02-18 15:51:24,544 [INFO] Member died: 511a5325 (Age: 14, Performance: 0.44)
+2025-02-18 15:51:24,545 [INFO] Reproduction phase started
+2025-02-18 15:51:24,549 [INFO] New member born: f60301fc (Parent: 14f7b416)
+2025-02-18 15:51:24,554 [INFO] New member born: 2ecf89e1 (Parent: a2bd57c1)
+2025-02-18 15:51:24,554 [INFO] Cycle 81 stats: Population=30, Avg Health=56.0, Avg Age=5.7, Best Performance=0.67
+2025-02-18 15:51:24,556 [INFO] Starting cycle 82
+2025-02-18 15:51:24,556 [INFO] Digestion phase started
+2025-02-18 15:51:24,668 [INFO] Member died: 5491f11f (Age: 16, Performance: 0.38)
+2025-02-18 15:51:24,738 [INFO] Member died: 93d08207 (Age: 13, Performance: 0.33)
+2025-02-18 15:51:25,374 [INFO] Member died: 3fb2218d (Age: 5, Performance: 0.22)
+2025-02-18 15:51:26,450 [INFO] Battle phase started
+2025-02-18 15:51:26,924 [INFO] Member died: 52c5d77f (Age: 13, Performance: 0.38)
+2025-02-18 15:51:28,046 [INFO] Member died: 951f49d4 (Age: 10, Performance: 0.20)
+2025-02-18 15:51:28,211 [INFO] Member died: 5fe22ad9 (Age: 6, Performance: 0.08)
+2025-02-18 15:51:28,569 [INFO] Member died: c4cd83ef (Age: 3, Performance: 0.11)
+2025-02-18 15:51:29,040 [INFO] Reproduction phase started
+2025-02-18 15:51:29,044 [INFO] New member born: 86969dd3 (Parent: 14f7b416)
+2025-02-18 15:51:29,049 [INFO] New member born: 60715feb (Parent: 1bbcbd13)
+2025-02-18 15:51:29,057 [INFO] New member born: 052a030c (Parent: a27ef2dc)
+2025-02-18 15:51:29,065 [INFO] New member born: f27c1978 (Parent: 0c1f33aa)
+2025-02-18 15:51:29,070 [INFO] New member born: a8f430de (Parent: f60301fc)
+2025-02-18 15:51:29,075 [INFO] New member born: 003a9904 (Parent: 2ecf89e1)
+2025-02-18 15:51:29,079 [INFO] New member born: f70e4df6 (Parent: 4b4fd98f)
+2025-02-18 15:51:29,080 [INFO] Cycle 82 stats: Population=30, Avg Health=61.6, Avg Age=4.5, Best Performance=0.60
+2025-02-18 15:51:29,080 [INFO] Starting cycle 83
+2025-02-18 15:51:29,080 [INFO] Digestion phase started
+2025-02-18 15:51:31,298 [INFO] Battle phase started
+2025-02-18 15:51:32,115 [INFO] Member died: 4f2320ca (Age: 7, Performance: 0.31)
+2025-02-18 15:51:33,039 [INFO] Member died: a2bd57c1 (Age: 6, Performance: 0.38)
+2025-02-18 15:51:33,923 [INFO] Reproduction phase started
+2025-02-18 15:51:33,927 [INFO] New member born: efc103f0 (Parent: f70e4df6)
+2025-02-18 15:51:33,931 [INFO] New member born: 0166e35f (Parent: 1bbcbd13)
+2025-02-18 15:51:33,932 [INFO] Cycle 83 stats: Population=30, Avg Health=56.1, Avg Age=5.1, Best Performance=0.67
+2025-02-18 15:51:33,932 [INFO] Starting cycle 84
+2025-02-18 15:51:33,932 [INFO] Digestion phase started
+2025-02-18 15:51:35,897 [INFO] Battle phase started
+2025-02-18 15:51:36,226 [INFO] Member died: 9672693d (Age: 9, Performance: 0.24)
+2025-02-18 15:51:36,318 [INFO] Member died: f60301fc (Age: 3, Performance: 0.25)
+2025-02-18 15:51:36,956 [INFO] Member died: 14f7b416 (Age: 4, Performance: 0.36)
+2025-02-18 15:51:37,189 [INFO] Member died: a27ef2dc (Age: 4, Performance: 0.22)
+2025-02-18 15:51:37,543 [INFO] Member died: 81036d60 (Age: 4, Performance: 0.10)
+2025-02-18 15:51:37,646 [INFO] Member died: b819f7c5 (Age: 8, Performance: 0.37)
+2025-02-18 15:51:37,918 [INFO] Reproduction phase started
+2025-02-18 15:51:37,923 [INFO] New member born: 384c03df (Parent: 1bbcbd13)
+2025-02-18 15:51:37,927 [INFO] New member born: 9184786e (Parent: f70e4df6)
+2025-02-18 15:51:37,934 [INFO] New member born: 8d18353a (Parent: b22a4442)
+2025-02-18 15:51:37,943 [INFO] New member born: e60667bd (Parent: efc103f0)
+2025-02-18 15:51:37,949 [INFO] New member born: 6e82975a (Parent: 0166e35f)
+2025-02-18 15:51:37,955 [INFO] New member born: 09769de0 (Parent: a36c4644)
+2025-02-18 15:51:37,955 [INFO] Cycle 84 stats: Population=30, Avg Health=61.7, Avg Age=5.0, Best Performance=0.60
+2025-02-18 15:51:37,955 [INFO] Starting cycle 85
+2025-02-18 15:51:37,955 [INFO] Digestion phase started
+2025-02-18 15:51:39,962 [INFO] Battle phase started
+2025-02-18 15:51:41,414 [INFO] Member died: fa3b77a0 (Age: 6, Performance: 0.15)
+2025-02-18 15:51:43,309 [INFO] Member died: 4b4fd98f (Age: 13, Performance: 0.41)
+2025-02-18 15:51:43,486 [INFO] Reproduction phase started
+2025-02-18 15:51:43,491 [INFO] New member born: 774d48ca (Parent: 9184786e)
+2025-02-18 15:51:43,502 [INFO] New member born: 3d0b46b2 (Parent: 0166e35f)
+2025-02-18 15:51:43,502 [INFO] Cycle 85 stats: Population=30, Avg Health=52.7, Avg Age=5.4, Best Performance=0.75
+2025-02-18 15:51:43,503 [INFO] Starting cycle 86
+2025-02-18 15:51:43,503 [INFO] Digestion phase started
+2025-02-18 15:51:44,528 [INFO] Member died: 2ecf89e1 (Age: 5, Performance: 0.22)
+2025-02-18 15:51:44,635 [INFO] Member died: 86969dd3 (Age: 4, Performance: 0.00)
+2025-02-18 15:51:45,644 [INFO] Battle phase started
+2025-02-18 15:51:45,878 [INFO] Member died: 51ed940a (Age: 9, Performance: 0.24)
+2025-02-18 15:51:46,058 [INFO] Member died: efc103f0 (Age: 3, Performance: 0.14)
+2025-02-18 15:51:46,259 [INFO] Member died: 0c1f33aa (Age: 6, Performance: 0.29)
+2025-02-18 15:51:47,222 [INFO] Member died: 1bbcbd13 (Age: 6, Performance: 0.43)
+2025-02-18 15:51:48,571 [INFO] Member died: fb0f90af (Age: 8, Performance: 0.22)
+2025-02-18 15:51:48,830 [INFO] Member died: 0c3eb732 (Age: 8, Performance: 0.22)
+2025-02-18 15:51:48,976 [INFO] Member died: f27c1978 (Age: 4, Performance: 0.10)
+2025-02-18 15:51:49,254 [INFO] Reproduction phase started
+2025-02-18 15:51:49,258 [INFO] New member born: 034c1ac5 (Parent: f70e4df6)
+2025-02-18 15:51:49,263 [INFO] New member born: 93e1a19e (Parent: 18cb5eea)
+2025-02-18 15:51:49,270 [INFO] New member born: e1e797ac (Parent: 0166e35f)
+2025-02-18 15:51:49,276 [INFO] New member born: efa69d0c (Parent: 09769de0)
+2025-02-18 15:51:49,285 [INFO] New member born: add5e3bd (Parent: a36c4644)
+2025-02-18 15:51:49,291 [INFO] New member born: ddb32ddb (Parent: 1ab2e202)
+2025-02-18 15:51:49,295 [INFO] New member born: 9d345989 (Parent: 384c03df)
+2025-02-18 15:51:49,323 [INFO] New member born: 335e224c (Parent: a8f430de)
+2025-02-18 15:51:49,323 [INFO] Cycle 86 stats: Population=29, Avg Health=62.7, Avg Age=4.7, Best Performance=0.64
+2025-02-18 15:51:49,323 [INFO] Starting cycle 87
+2025-02-18 15:51:49,323 [INFO] Digestion phase started
+2025-02-18 15:51:49,505 [INFO] Member died: c61792ec (Age: 11, Performance: 0.26)
+2025-02-18 15:51:49,792 [INFO] Member died: b22a4442 (Age: 7, Performance: 0.38)
+2025-02-18 15:51:51,203 [INFO] Battle phase started
+2025-02-18 15:51:52,791 [INFO] Reproduction phase started
+2025-02-18 15:51:52,796 [INFO] New member born: cd4e1ddb (Parent: 18cb5eea)
+2025-02-18 15:51:52,801 [INFO] New member born: 39830760 (Parent: 0166e35f)
+2025-02-18 15:51:52,807 [INFO] New member born: 8426b077 (Parent: 09769de0)
+2025-02-18 15:51:52,808 [INFO] Cycle 87 stats: Population=30, Avg Health=58.6, Avg Age=5.0, Best Performance=0.57
+2025-02-18 15:51:52,808 [INFO] Starting cycle 88
+2025-02-18 15:51:52,808 [INFO] Digestion phase started
+2025-02-18 15:51:54,857 [INFO] Battle phase started
+2025-02-18 15:51:55,288 [INFO] Member died: 1ab2e202 (Age: 18, Performance: 0.39)
+2025-02-18 15:51:55,959 [INFO] Member died: 0166e35f (Age: 5, Performance: 0.45)
+2025-02-18 15:51:56,763 [INFO] Member died: 384c03df (Age: 4, Performance: 0.22)
+2025-02-18 15:51:56,884 [INFO] Member died: 4fcaf99f (Age: 11, Performance: 0.28)
+2025-02-18 15:51:57,088 [INFO] Member died: 774d48ca (Age: 3, Performance: 0.11)
+2025-02-18 15:51:57,252 [INFO] Member died: 052a030c (Age: 6, Performance: 0.20)
+2025-02-18 15:51:57,754 [INFO] Reproduction phase started
+2025-02-18 15:51:57,758 [INFO] New member born: 379aca7f (Parent: cd4e1ddb)
+2025-02-18 15:51:57,763 [INFO] New member born: 1f368aa6 (Parent: 09769de0)
+2025-02-18 15:51:57,768 [INFO] New member born: 96f1f659 (Parent: 18cb5eea)
+2025-02-18 15:51:57,772 [INFO] New member born: 096ac0ce (Parent: 93e1a19e)
+2025-02-18 15:51:57,778 [INFO] New member born: 8a550546 (Parent: efa69d0c)
+2025-02-18 15:51:57,784 [INFO] New member born: 9a61cc6a (Parent: add5e3bd)
+2025-02-18 15:51:57,785 [INFO] Cycle 88 stats: Population=30, Avg Health=59.8, Avg Age=4.4, Best Performance=0.67
+2025-02-18 15:51:57,785 [INFO] Starting cycle 89
+2025-02-18 15:51:57,785 [INFO] Digestion phase started
+2025-02-18 15:51:58,240 [INFO] Member died: 9184786e (Age: 5, Performance: 0.38)
+2025-02-18 15:51:59,668 [INFO] Battle phase started
+2025-02-18 15:51:59,864 [INFO] Member died: 3d0b46b2 (Age: 4, Performance: 0.10)
+2025-02-18 15:52:00,000 [INFO] Member died: 003a9904 (Age: 7, Performance: 0.24)
+2025-02-18 15:52:00,389 [INFO] Member died: a8f430de (Age: 7, Performance: 0.27)
+2025-02-18 15:52:00,486 [INFO] Member died: 34d29457 (Age: 11, Performance: 0.27)
+2025-02-18 15:52:01,369 [INFO] Member died: f70e4df6 (Age: 7, Performance: 0.44)
+2025-02-18 15:52:02,585 [INFO] Reproduction phase started
+2025-02-18 15:52:02,589 [INFO] New member born: bba23739 (Parent: 379aca7f)
+2025-02-18 15:52:02,594 [INFO] New member born: 770cfa47 (Parent: 096ac0ce)
+2025-02-18 15:52:02,599 [INFO] New member born: 5f1aed96 (Parent: 96f1f659)
+2025-02-18 15:52:02,612 [INFO] New member born: 14428ffb (Parent: 9a61cc6a)
+2025-02-18 15:52:02,619 [INFO] New member born: 2946be8c (Parent: 09769de0)
+2025-02-18 15:52:02,626 [INFO] New member born: 6c6a15b0 (Parent: cd4e1ddb)
+2025-02-18 15:52:02,626 [INFO] Cycle 89 stats: Population=30, Avg Health=59.3, Avg Age=4.0, Best Performance=0.75
+2025-02-18 15:52:02,626 [INFO] Starting cycle 90
+2025-02-18 15:52:02,626 [INFO] Digestion phase started
+2025-02-18 15:52:02,833 [INFO] Member died: 60715feb (Age: 8, Performance: 0.25)
+2025-02-18 15:52:03,183 [INFO] Member died: 034c1ac5 (Age: 4, Performance: 0.00)
+2025-02-18 15:52:03,534 [INFO] Member died: 9d345989 (Age: 4, Performance: 0.00)
+2025-02-18 15:52:04,770 [INFO] Battle phase started
+2025-02-18 15:52:05,229 [INFO] Member died: 39830760 (Age: 3, Performance: 0.20)
+2025-02-18 15:52:06,369 [INFO] Member died: e1e797ac (Age: 4, Performance: 0.00)
+2025-02-18 15:52:06,481 [INFO] Member died: 09769de0 (Age: 6, Performance: 0.50)
+2025-02-18 15:52:07,145 [INFO] Reproduction phase started
+2025-02-18 15:52:07,150 [INFO] New member born: b9440a0f (Parent: 379aca7f)
+2025-02-18 15:52:07,154 [INFO] New member born: 598bd882 (Parent: bba23739)
+2025-02-18 15:52:07,158 [INFO] New member born: 3fb2769d (Parent: 96f1f659)
+2025-02-18 15:52:07,165 [INFO] New member born: 4215252c (Parent: 9a61cc6a)
+2025-02-18 15:52:07,172 [INFO] New member born: 2fa242aa (Parent: cd4e1ddb)
+2025-02-18 15:52:07,178 [INFO] New member born: ed9d98fb (Parent: ddb32ddb)
+2025-02-18 15:52:07,178 [INFO] Cycle 90 stats: Population=30, Avg Health=63.0, Avg Age=4.1, Best Performance=0.67
+2025-02-18 15:52:07,281 [INFO] State saved to pool/cycle_90
+2025-02-18 15:52:07,281 [INFO] Starting cycle 91
+2025-02-18 15:52:07,281 [INFO] Digestion phase started
+2025-02-18 15:52:09,364 [INFO] Battle phase started
+2025-02-18 15:52:11,126 [INFO] Member died: a36c4644 (Age: 20, Performance: 0.43)
+2025-02-18 15:52:11,726 [INFO] Member died: 18cb5eea (Age: 12, Performance: 0.52)
+2025-02-18 15:52:12,205 [INFO] Reproduction phase started
+2025-02-18 15:52:12,209 [INFO] New member born: bf313fd1 (Parent: 379aca7f)
+2025-02-18 15:52:12,218 [INFO] New member born: 5b8c0d7e (Parent: ddb32ddb)
+2025-02-18 15:52:12,218 [INFO] Cycle 91 stats: Population=30, Avg Health=58.4, Avg Age=4.0, Best Performance=0.62
+2025-02-18 15:52:12,218 [INFO] Starting cycle 92
+2025-02-18 15:52:12,218 [INFO] Digestion phase started
+2025-02-18 15:52:12,404 [INFO] Member died: e60667bd (Age: 8, Performance: 0.26)
+2025-02-18 15:52:14,306 [INFO] Battle phase started
+2025-02-18 15:52:14,626 [INFO] Member died: 96f1f659 (Age: 4, Performance: 0.33)
+2025-02-18 15:52:15,844 [INFO] Member died: 8d18353a (Age: 8, Performance: 0.22)
+2025-02-18 15:52:16,843 [INFO] Member died: 9a61cc6a (Age: 4, Performance: 0.36)
+2025-02-18 15:52:17,651 [INFO] Member died: 8a550546 (Age: 4, Performance: 0.18)
+2025-02-18 15:52:18,528 [INFO] Reproduction phase started
+2025-02-18 15:52:18,533 [INFO] New member born: 049f6c60 (Parent: 096ac0ce)
+2025-02-18 15:52:18,539 [INFO] New member born: 954f3c28 (Parent: 6c6a15b0)
+2025-02-18 15:52:18,547 [INFO] New member born: 26e25701 (Parent: ed9d98fb)
+2025-02-18 15:52:18,553 [INFO] New member born: 040006c1 (Parent: 598bd882)
+2025-02-18 15:52:18,560 [INFO] New member born: 6dc0443a (Parent: efa69d0c)
+2025-02-18 15:52:18,560 [INFO] Cycle 92 stats: Population=30, Avg Health=58.1, Avg Age=4.1, Best Performance=0.58
+2025-02-18 15:52:18,560 [INFO] Starting cycle 93
+2025-02-18 15:52:18,560 [INFO] Digestion phase started
+2025-02-18 15:52:20,504 [INFO] Battle phase started
+2025-02-18 15:52:20,678 [INFO] Member died: 379aca7f (Age: 5, Performance: 0.46)
+2025-02-18 15:52:20,905 [INFO] Member died: add5e3bd (Age: 7, Performance: 0.29)
+2025-02-18 15:52:22,379 [INFO] Member died: cd4e1ddb (Age: 6, Performance: 0.44)
+2025-02-18 15:52:23,196 [INFO] Reproduction phase started
+2025-02-18 15:52:23,200 [INFO] New member born: a70eb178 (Parent: 096ac0ce)
+2025-02-18 15:52:23,204 [INFO] New member born: de0750a6 (Parent: 049f6c60)
+2025-02-18 15:52:23,208 [INFO] New member born: 174a29c6 (Parent: 26e25701)
+2025-02-18 15:52:23,208 [INFO] Cycle 93 stats: Population=30, Avg Health=56.7, Avg Age=4.5, Best Performance=0.53
+2025-02-18 15:52:23,208 [INFO] Starting cycle 94
+2025-02-18 15:52:23,208 [INFO] Digestion phase started
+2025-02-18 15:52:23,523 [INFO] Member died: ddb32ddb (Age: 8, Performance: 0.40)
+2025-02-18 15:52:23,690 [INFO] Member died: 8426b077 (Age: 7, Performance: 0.21)
+2025-02-18 15:52:25,153 [INFO] Battle phase started
+2025-02-18 15:52:25,488 [INFO] Member died: 096ac0ce (Age: 6, Performance: 0.47)
+2025-02-18 15:52:25,654 [INFO] Member died: 14428ffb (Age: 5, Performance: 0.15)
+2025-02-18 15:52:25,949 [INFO] Member died: 1f368aa6 (Age: 6, Performance: 0.20)
+2025-02-18 15:52:26,037 [INFO] Member died: ed9d98fb (Age: 4, Performance: 0.33)
+2025-02-18 15:52:27,439 [INFO] Member died: efa69d0c (Age: 8, Performance: 0.33)
+2025-02-18 15:52:28,056 [INFO] Member died: 4215252c (Age: 4, Performance: 0.11)
+2025-02-18 15:52:28,056 [INFO] Reproduction phase started
+2025-02-18 15:52:28,060 [INFO] New member born: 18472181 (Parent: de0750a6)
+2025-02-18 15:52:28,064 [INFO] New member born: fa70c42d (Parent: 174a29c6)
+2025-02-18 15:52:28,211 [INFO] New member born: 5603fda5 (Parent: 954f3c28)
+2025-02-18 15:52:28,215 [INFO] New member born: ce301e77 (Parent: 6dc0443a)
+2025-02-18 15:52:28,220 [INFO] New member born: e917529b (Parent: a70eb178)
+2025-02-18 15:52:28,227 [INFO] New member born: 79ce2700 (Parent: 93e1a19e)
+2025-02-18 15:52:28,234 [INFO] New member born: 5f036614 (Parent: 2fa242aa)
+2025-02-18 15:52:28,240 [INFO] New member born: 067aca98 (Parent: bba23739)
+2025-02-18 15:52:28,240 [INFO] Cycle 94 stats: Population=30, Avg Health=63.5, Avg Age=3.9, Best Performance=0.67
+2025-02-18 15:52:28,241 [INFO] Starting cycle 95
+2025-02-18 15:52:28,241 [INFO] Digestion phase started
+2025-02-18 15:52:30,064 [INFO] Battle phase started
+2025-02-18 15:52:31,182 [INFO] Member died: 598bd882 (Age: 5, Performance: 0.20)
+2025-02-18 15:52:32,276 [INFO] Member died: 6c6a15b0 (Age: 6, Performance: 0.33)
+2025-02-18 15:52:32,379 [INFO] Reproduction phase started
+2025-02-18 15:52:32,384 [INFO] New member born: 7735af6f (Parent: a70eb178)
+2025-02-18 15:52:32,389 [INFO] New member born: f0fff7ee (Parent: 174a29c6)
+2025-02-18 15:52:32,389 [INFO] Cycle 95 stats: Population=30, Avg Health=59.9, Avg Age=4.5, Best Performance=0.60
+2025-02-18 15:52:32,389 [INFO] Starting cycle 96
+2025-02-18 15:52:32,389 [INFO] Digestion phase started
+2025-02-18 15:52:34,534 [INFO] Battle phase started
+2025-02-18 15:52:35,558 [INFO] Member died: 174a29c6 (Age: 3, Performance: 0.38)
+2025-02-18 15:52:36,664 [INFO] Member died: 954f3c28 (Age: 4, Performance: 0.27)
+2025-02-18 15:52:36,828 [INFO] Member died: bba23739 (Age: 7, Performance: 0.37)
+2025-02-18 15:52:37,496 [INFO] Reproduction phase started
+2025-02-18 15:52:37,501 [INFO] New member born: 6f90ea99 (Parent: 7735af6f)
+2025-02-18 15:52:37,507 [INFO] New member born: 440702e7 (Parent: 18472181)
+2025-02-18 15:52:37,512 [INFO] New member born: b04b2e85 (Parent: a70eb178)
+2025-02-18 15:52:37,512 [INFO] Cycle 96 stats: Population=30, Avg Health=56.4, Avg Age=5.0, Best Performance=0.67
+2025-02-18 15:52:37,512 [INFO] Starting cycle 97
+2025-02-18 15:52:37,512 [INFO] Digestion phase started
+2025-02-18 15:52:37,829 [INFO] Member died: 335e224c (Age: 11, Performance: 0.24)
+2025-02-18 15:52:39,798 [INFO] Battle phase started
+2025-02-18 15:52:40,246 [INFO] Member died: 2fa242aa (Age: 7, Performance: 0.27)
+2025-02-18 15:52:41,396 [INFO] Member died: bf313fd1 (Age: 6, Performance: 0.15)
+2025-02-18 15:52:41,718 [INFO] Member died: 6e82975a (Age: 13, Performance: 0.31)
+2025-02-18 15:52:41,963 [INFO] Member died: 2946be8c (Age: 8, Performance: 0.29)
+2025-02-18 15:52:42,320 [INFO] Member died: b9440a0f (Age: 7, Performance: 0.22)
+2025-02-18 15:52:42,320 [INFO] Reproduction phase started
+2025-02-18 15:52:42,324 [INFO] New member born: 62391451 (Parent: 7735af6f)
+2025-02-18 15:52:42,329 [INFO] New member born: aaa0b594 (Parent: 18472181)
+2025-02-18 15:52:42,336 [INFO] New member born: a502a408 (Parent: a70eb178)
+2025-02-18 15:52:42,344 [INFO] New member born: 53708be6 (Parent: 049f6c60)
+2025-02-18 15:52:42,350 [INFO] New member born: a64601d4 (Parent: 067aca98)
+2025-02-18 15:52:42,354 [INFO] New member born: 0887e58f (Parent: 6f90ea99)
+2025-02-18 15:52:42,355 [INFO] Cycle 97 stats: Population=30, Avg Health=59.0, Avg Age=4.3, Best Performance=0.60
+2025-02-18 15:52:42,356 [INFO] Starting cycle 98
+2025-02-18 15:52:42,356 [INFO] Digestion phase started
+2025-02-18 15:52:42,437 [INFO] Member died: 93e1a19e (Age: 12, Performance: 0.41)
+2025-02-18 15:52:43,318 [INFO] Member died: ce301e77 (Age: 4, Performance: 0.00)
+2025-02-18 15:52:44,409 [INFO] Battle phase started
+2025-02-18 15:52:45,993 [INFO] Member died: 770cfa47 (Age: 9, Performance: 0.27)
+2025-02-18 15:52:46,645 [INFO] Reproduction phase started
+2025-02-18 15:52:46,650 [INFO] New member born: 7adfba1c (Parent: aaa0b594)
+2025-02-18 15:52:46,655 [INFO] New member born: b7102b74 (Parent: 6f90ea99)
+2025-02-18 15:52:46,663 [INFO] New member born: 83fba6f5 (Parent: 440702e7)
+2025-02-18 15:52:46,663 [INFO] Cycle 98 stats: Population=30, Avg Health=56.5, Avg Age=4.5, Best Performance=0.67
+2025-02-18 15:52:46,663 [INFO] Starting cycle 99
+2025-02-18 15:52:46,663 [INFO] Digestion phase started
+2025-02-18 15:52:46,831 [INFO] Member died: 3fb2769d (Age: 9, Performance: 0.30)
+2025-02-18 15:52:48,854 [INFO] Battle phase started
+2025-02-18 15:52:50,320 [INFO] Member died: 5b8c0d7e (Age: 8, Performance: 0.27)
+2025-02-18 15:52:50,413 [INFO] Member died: 6dc0443a (Age: 7, Performance: 0.29)
+2025-02-18 15:52:51,756 [INFO] Reproduction phase started
+2025-02-18 15:52:51,762 [INFO] New member born: 7631bbbb (Parent: aaa0b594)
+2025-02-18 15:52:51,767 [INFO] New member born: ce6d81c6 (Parent: 440702e7)
+2025-02-18 15:52:51,774 [INFO] New member born: 03b7cd84 (Parent: 6f90ea99)
+2025-02-18 15:52:51,774 [INFO] Cycle 99 stats: Population=30, Avg Health=55.3, Avg Age=4.7, Best Performance=0.60
+2025-02-18 15:52:51,774 [INFO] Starting cycle 100
+2025-02-18 15:52:51,774 [INFO] Digestion phase started
+2025-02-18 15:52:51,903 [INFO] Member died: 5f1aed96 (Age: 11, Performance: 0.29)
+2025-02-18 15:52:52,189 [INFO] Member died: a70eb178 (Age: 7, Performance: 0.46)
+2025-02-18 15:52:53,914 [INFO] Battle phase started
+2025-02-18 15:52:55,256 [INFO] Member died: 7735af6f (Age: 5, Performance: 0.33)
+2025-02-18 15:52:55,373 [INFO] Member died: 6f90ea99 (Age: 4, Performance: 0.38)
+2025-02-18 15:52:55,474 [INFO] Member died: 067aca98 (Age: 6, Performance: 0.29)
+2025-02-18 15:52:55,840 [INFO] Member died: fa70c42d (Age: 6, Performance: 0.20)
+2025-02-18 15:52:55,946 [INFO] Member died: 18472181 (Age: 6, Performance: 0.33)
+2025-02-18 15:52:56,312 [INFO] Member died: 049f6c60 (Age: 8, Performance: 0.40)
+2025-02-18 15:52:56,608 [INFO] Reproduction phase started
+2025-02-18 15:52:56,613 [INFO] New member born: 3123058e (Parent: 7adfba1c)
+2025-02-18 15:52:56,618 [INFO] New member born: e62c7ca5 (Parent: 440702e7)
+2025-02-18 15:52:56,628 [INFO] New member born: cb7d1aec (Parent: b7102b74)
+2025-02-18 15:52:56,636 [INFO] New member born: 6a8426bc (Parent: 7631bbbb)
+2025-02-18 15:52:56,641 [INFO] New member born: 6bc3a331 (Parent: 03b7cd84)
+2025-02-18 15:52:56,648 [INFO] New member born: 9bf6db6c (Parent: 26e25701)
+2025-02-18 15:52:56,653 [INFO] New member born: 0e8a889e (Parent: a502a408)
+2025-02-18 15:52:56,662 [INFO] New member born: b36c3d75 (Parent: de0750a6)
+2025-02-18 15:52:56,663 [INFO] Cycle 100 stats: Population=30, Avg Health=64.7, Avg Age=3.9, Best Performance=0.60
+2025-02-18 15:52:56,773 [INFO] State saved to pool/cycle_100
