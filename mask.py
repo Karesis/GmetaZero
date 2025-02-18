@@ -1,5 +1,5 @@
 import torch
-from typing import List, Tuple, Optional, Dict
+from typing import List, Tuple, Optional
 from collections import deque
 import random
 import uuid
@@ -176,8 +176,8 @@ class Mask:
         self.performance = self.win_count / max(1, self.total_games)
         
     def get_move(self, board: List[List[str]], valid_moves: List[Tuple[int, int]], 
-                 player: str, temperature: float = 1.0) -> Optional[Tuple[int, int]]:
-        """决定下一步移动"""
+             player: str, temperature: float = 1.0) -> Optional[Tuple[int, int]]:
+        """决定下一步移动，使用加权随机选择策略"""
         if not valid_moves:
             return None
             
@@ -193,8 +193,21 @@ class Mask:
         
         if not suggested_paths:
             return None
-            
-        best_move = suggested_paths[0][0]  # 取建议路径中的第一个移动
+        
+        # 智能路径选择逻辑
+        if temperature < 0.5 or random.random() < 0.7:  # 探索与利用的平衡
+            # 利用模式：根据胜率加权选择
+            moves, paths, probs = zip(*suggested_paths)
+            probs = torch.tensor(probs)
+            probs = torch.softmax(probs / max(0.1, temperature), dim=0)  # 温度缩放
+            chosen_idx = torch.multinomial(probs, 1).item()
+            best_move = moves[chosen_idx]
+            selected_path = paths[chosen_idx]
+        else:
+            # 探索模式：在前N个建议中随机选择
+            explore_range = min(len(suggested_paths), 3)  # 探索范围
+            chosen_idx = random.randrange(explore_range)
+            best_move, selected_path, _ = suggested_paths[chosen_idx]
         
         # 记录状态
         self.current_game_states.append((board, best_move, player))
@@ -205,11 +218,13 @@ class Mask:
         return best_move
         
     def reproduce(self) -> Optional['Mask']:
-        """繁殖后代
+        """高级繁殖方法，具有动态突变率和参数特异性突变
+        
         Returns:
             Optional[Mask]: 如果条件满足则返回新的 Mask，否则返回 None
         """
-        if self.health < 50:  # 需要足够的生命值
+        # 健康检查 - 需要足够的生命值才能繁殖
+        if self.health < 50 or not self.is_alive():
             return None
             
         # 创建子代
@@ -220,21 +235,186 @@ class Mask:
             parent_id=self.id
         )
         
-        # 继承父代的大脑参数（带有小概率突变）
+        # 继承父代的大脑参数
         child.brain.load_state_dict(self.brain.state_dict())
         
-        # 随机突变
-        if random.random() < 0.1:  # 10% 的突变概率
-            with torch.no_grad():
-                for param in child.brain.parameters():
-                    if random.random() < 0.1:  # 每个参数 10% 的突变概率
-                        mutation = torch.randn_like(param) * 0.1
+        # 动态突变率 - 根据父代性能和年龄调整
+        base_mutation_prob = 0.1  # 基础突变概率
+        
+        # 性能因子 - 性能越好，突变率越低
+        performance_factor = max(0.5, 1.0 - self.performance)
+        
+        # 年龄因子 - 年龄越大，突变率略微增加（促进探索）
+        age_factor = min(1.5, 1.0 + (self.age / 50) * 0.5)
+        
+        # 健康因子 - 健康越好，突变率越低（稳定遗传）
+        health_factor = max(0.8, 1.0 - (self.health / 100) * 0.2)
+        
+        # 计算最终突变率
+        mutation_prob = base_mutation_prob * performance_factor * age_factor * health_factor
+        
+        # 参数特异性突变
+        with torch.no_grad():
+            # 对不同层使用不同突变强度
+            for name, param in child.brain.named_parameters():
+                # 确定该参数的突变概率
+                param_mutation_prob = mutation_prob
+                
+                # 策略网络和价值网络参数差异化突变
+                if 'policy_head' in name:
+                    param_mutation_prob *= 0.8  # 策略头参数更保守
+                elif 'value_head' in name:
+                    param_mutation_prob *= 1.2  # 价值头参数更激进
+                    
+                # 对卷积层和全连接层差异化处理
+                if 'weight' in name and param.dim() > 1:
+                    if param.dim() == 4:  # 卷积层
+                        # 对卷积核逐个突变
+                        for i in range(param.size(0)):
+                            if random.random() < param_mutation_prob:
+                                # 卷积核突变 - 保持结构特性
+                                mutation_scale = 0.05 * random.random()
+                                mutation = torch.randn_like(param[i]) * mutation_scale
+                                param[i].add_(mutation)
+                    else:  # 全连接层
+                        if random.random() < param_mutation_prob:
+                            # 全连接层突变
+                            mutation_scale = 0.1 * random.random()
+                            mutation = torch.randn_like(param) * mutation_scale
+                            param.add_(mutation)
+                elif 'bias' in name:
+                    # 偏置项突变概率较低
+                    if random.random() < param_mutation_prob * 0.5:
+                        mutation_scale = 0.02 * random.random()
+                        mutation = torch.randn_like(param) * mutation_scale
+                        param.add_(mutation)
+                else:
+                    # 其他参数通用突变
+                    if random.random() < param_mutation_prob:
+                        mutation_scale = 0.08 * random.random()
+                        mutation = torch.randn_like(param) * mutation_scale
                         param.add_(mutation)
         
-        # 消耗一定生命值
-        self.health = max(0, self.health - 30)
+        # 继承部分记忆（选择性记忆继承）
+        if hasattr(self.memory, 'root') and self.memory.root:
+            # 选择性复制重要的记忆路径
+            important_fibers = self._select_important_fibers()
+            for fiber in important_fibers:
+                child.memory.start_adding_mode()
+                for move in fiber:
+                    child.memory.add_move(move)
+                child.memory.end_adding_mode()
+        
+        # 消耗生命值，根据突变程度调整消耗
+        mutation_cost = 30 * (1 + mutation_prob / base_mutation_prob * 0.5)
+        self.health = max(0, self.health - mutation_cost)
         
         return child
+
+    def _select_important_fibers(self) -> List[List[Move]]:
+        """
+        选择重要记忆路径传递给后代
+        
+        策略：
+        1. 选择高胜率的路径
+        2. 选择高访问次数的路径
+        3. 保持路径多样性
+        4. 限制总路径数量以避免过拟合
+        
+        Returns:
+            List[List[Move]]: 重要记忆路径列表
+        """
+        important_fibers = []
+        fibers_info = []
+        max_fibers_to_transfer = 10  # 最大传递路径数
+        
+        # 只有当内存中有记忆时才进行处理
+        if not hasattr(self.memory, 'root') or not self.memory.root or not self.memory.root.next_fibers:
+            return important_fibers
+        
+        # 递归收集Fiber信息
+        def collect_fibers(fiber, path_so_far=None):
+            if path_so_far is None:
+                path_so_far = []
+            
+            if not fiber.next_fibers:  # 叶节点
+                if fiber.visit_count > 0:
+                    complete_path = path_so_far + fiber.moves
+                    win_rate = fiber.win_count / max(1, fiber.visit_count)
+                    fibers_info.append({
+                        'path': complete_path,
+                        'visit_count': fiber.visit_count,
+                        'win_rate': win_rate,
+                        'depth': len(complete_path),
+                        'confidence': win_rate * math.log(fiber.visit_count + 1)
+                    })
+                return
+            
+            # 继续递归遍历
+            for next_fiber in fiber.next_fibers:
+                collect_fibers(next_fiber, path_so_far + fiber.moves)
+        
+        # 从根节点开始收集
+        collect_fibers(self.memory.root)
+        
+        # 如果没有收集到任何路径
+        if not fibers_info:
+            return important_fibers
+        
+        # 按不同指标排序并选择
+        # 1. 高置信度路径（结合胜率和访问次数）
+        confidence_sorted = sorted(fibers_info, key=lambda x: x['confidence'], reverse=True)
+        high_confidence_paths = [item['path'] for item in confidence_sorted[:min(5, len(confidence_sorted))]]
+        
+        # 2. 高胜率但样本量适中的路径
+        win_rate_sorted = sorted(
+            [f for f in fibers_info if f['visit_count'] >= 3],  # 至少3次访问以确保统计稳定性
+            key=lambda x: x['win_rate'], 
+            reverse=True
+        )
+        high_winrate_paths = [item['path'] for item in win_rate_sorted[:min(3, len(win_rate_sorted))]]
+        
+        # 3. 选择一些长路径（可能代表完整对局）
+        depth_sorted = sorted(fibers_info, key=lambda x: x['depth'], reverse=True)
+        deep_paths = [item['path'] for item in depth_sorted[:min(2, len(depth_sorted))]]
+        
+        # 4. 选择一些较短但高频路径（开局策略）
+        opening_candidates = [
+            f for f in fibers_info 
+            if 2 <= f['depth'] <= 6 and f['visit_count'] >= 5
+        ]
+        opening_sorted = sorted(opening_candidates, key=lambda x: x['visit_count'], reverse=True)
+        opening_paths = [item['path'] for item in opening_sorted[:min(3, len(opening_sorted))]]
+        
+        # 合并所有选中路径，确保不重复
+        all_paths = []
+        all_paths.extend(high_confidence_paths)
+        all_paths.extend(high_winrate_paths)
+        all_paths.extend(deep_paths)
+        all_paths.extend(opening_paths)
+        
+        # 去重 - 基于路径的字符串表示
+        unique_paths = {}
+        for path in all_paths:
+            path_str = ','.join([str(move.value) for move in path])
+            if path_str not in unique_paths:
+                unique_paths[path_str] = path
+        
+        # 构建最终的路径列表，控制数量
+        important_fibers = list(unique_paths.values())[:max_fibers_to_transfer]
+        
+        # 随机保留一些路径以增加多样性（如果路径足够多）
+        if len(important_fibers) > max_fibers_to_transfer // 2:
+            # 保留高价值的一半，剩下的随机选择
+            guaranteed = important_fibers[:max_fibers_to_transfer // 2]
+            candidates = important_fibers[max_fibers_to_transfer // 2:]
+            random_selected = random.sample(
+                candidates, 
+                min(len(candidates), max_fibers_to_transfer - len(guaranteed))
+            )
+            important_fibers = guaranteed + random_selected
+        
+        return important_fibers
         
     def update_age(self):
         """更新年龄，重置周期计数"""

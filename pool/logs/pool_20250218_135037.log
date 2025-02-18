@@ -1,0 +1,18 @@
+2025-02-18 13:50:37,268 [INFO] Initializing population with 20 members
+2025-02-18 13:50:37,787 [INFO] Starting cycle 1
+2025-02-18 13:50:37,787 [INFO] Digestion phase started
+2025-02-18 13:50:39,024 [INFO] Battle phase started
+2025-02-18 13:50:40,861 [INFO] Reproduction phase started
+2025-02-18 13:50:40,865 [INFO] New member born: 21e54c28 (Parent: c4ad807e)
+2025-02-18 13:50:40,868 [INFO] New member born: 8c0b2652 (Parent: 11f333eb)
+2025-02-18 13:50:40,872 [INFO] New member born: b5899c37 (Parent: 88d396d7)
+2025-02-18 13:50:40,881 [INFO] New member born: d9742226 (Parent: ea6ed0aa)
+2025-02-18 13:50:40,887 [INFO] New member born: d3867562 (Parent: a536fb3f)
+2025-02-18 13:50:40,893 [INFO] New member born: 71405736 (Parent: 372b462a)
+2025-02-18 13:50:40,898 [INFO] New member born: e513c408 (Parent: 5a713cb6)
+2025-02-18 13:50:40,903 [INFO] New member born: 671862cb (Parent: b85f5520)
+2025-02-18 13:50:40,908 [INFO] New member born: ad93e606 (Parent: 05477eea)
+2025-02-18 13:50:40,913 [INFO] New member born: fe8c46e2 (Parent: e2d19883)
+2025-02-18 13:50:40,913 [INFO] Cycle 1 stats: Population=30, Avg Health=79.0, Avg Age=1.0, Best Performance=0.75
+2025-02-18 13:50:40,913 [INFO] Starting cycle 2
+2025-02-18 13:50:40,914 [INFO] Digestion phase started
